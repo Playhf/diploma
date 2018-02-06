@@ -1,0 +1,71 @@
+.head, .content, .footer{
+	display: block;
+	width: 70%;
+	position: relative;
+	left: 15%;
+	min-width: 500px;
+}
+.head{
+	background: lightgrey;
+	height: 20%;
+	top: 2.5%;
+}
+.content{
+	position: relative;
+	height: 50%;
+	top: 22.5%;
+}
+.footer{
+	position: fixed;
+	background: lightblue;
+	bottom: 0;
+	margin-bottom: 1px;
+	height: 10%;
+
+}
+.user{
+	width: 180px;
+	position: absolute;
+	right: 0%;
+	top: 0%;
+}
+.footer-links {
+	target: _blank;
+}
+.form-group {
+	margin: 10px 0 10px 0;
+}
+.form-group > label {
+	/*font-weight: bold;*/
+	display: block;
+}
+.form-group > input {
+	margin-top: 5px;
+	border-radius: 5px;
+}
+label.error {
+	font-weight: bold;
+}
+table {
+	width: 500px; /* Ширина таблицы */
+	border-collapse: collapse;
+	border: 1px solid black;
+}
+td th {
+	padding: 3px; /* Поля вокруг содержимого таблицы */
+	border: 1px solid black;
+}
+th {
+	background: red;
+}
+
+.hidden {
+	display: none;
+	font-weight:bold;
+}
+
+.result {
+	min-width: 310px;
+	height: 400px;
+	margin:0 auto;
+}

@@ -1,0 +1,63 @@
+<h2>Введите исходные данные для расчета характеристик ступени <b>1а-0,25-0,028:</b></h2>
+<form id="calculate" action="/compr/countptc/" method="post" >
+    <div class="form-group">
+        <label for="text1">Давление, бар: </label>
+        <input type="text" id="text1" name="pr" value="<?php echo $data['pr']?>">
+    </div>
+    <div class="form-group">
+        <label for="text2">Шероховатость, мкм: </label>
+        <input type="text" id="text2" name="ra" value="<?php echo $data['ra']?>">
+    </div>
+    <div class="form-group">
+        <label for="text3">Скорость u<sub>2</sub>, (м/с): </label>
+        <input type="text" id="text3" name="sp" value="<?php echo $data['sp']?>">
+    </div>
+    <div class="form-group">
+        <label for="text4">Температура на входе в ступень, К: </label>
+        <input type="text" id="text4" name="tem" value="<?php echo $data['tem']?>">
+    </div>
+    <div class="form-group">
+        <label for="text5">Газовая постоянная, Дж/(кг*К): </label>
+        <input type="text" id="text5" name="gas" value="<?php echo $data['gas']?>">
+    </div>
+    <div class="form-group">
+        <label for="text6">Диаметр D<sub>2</sub>, мм: </label>
+        <input type="text" id="text6" name="dia" value="<?php echo $data['dia']?>">
+    </div>
+    <div class="form-group">
+        <label for="text7">Динамическая вязкость (*10<sup>-6</sup>) см. таблицу зависимостей: </label>
+        <input type="text" id="text7" name="visc" value="<?php echo $data['dia']?>">
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Рассчитать">
+    </div>
+    <script>
+        (function ($) {
+            $(document).ready(function () {
+                $('#calculate').validate({
+                    rules: {
+                        pr: {
+                            required: true,
+                            number: true
+                        },
+                        tem: {
+                            required: true,
+                            number: true,
+                            minlength: 3
+                        }
+                    },
+                    messages: {
+                        pr: {
+                            required: 'Это поле обязательное для заполнения.',
+                            number: "Только числовые значение можно вводить в это поле"
+                        },
+                        tem: {
+                            required: 'Это поле обязательное для заполнения.',
+                            minlength: 'Длина этого поля должна быть не менне 3-х символов.'
+                        }
+                    }
+                })
+            })
+        })(jQuery);
+    </script>
+</form>

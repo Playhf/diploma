@@ -1,0 +1,12 @@
+<h2>Пожалуйста, авторизуйтесь</h2>
+<?php if(isset($data['errors']) && is_array($data['errors'])):
+    foreach($data['errors'] as $error): ?>
+<p><?php echo $error ?></p>
+    <?php endforeach;
+ endif; ?>
+<form action="/user/auth" method="post">
+    <label><p>Ваш логин: <input type="text" name="userLogin" required></p></label>
+    <label><p>Ваш пароль: <input type="password" name="userPassword"></p></label>
+    <input type="submit" value="Войти">
+</form>
+<a href="/user/register">Регистрация</a>

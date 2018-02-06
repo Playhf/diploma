@@ -1,0 +1,165 @@
+<?php if ($session['result']): $result = $session['result'] ?>
+    <h2>Результат расчета характеристик компрессора с исходными данными: </h2>
+    <ul>
+        <li><b>Давление: </b><?php echo $result['pr'] ?></li>
+        <li><b>Шероховатость: </b><?php echo $result['ra'] ?></li>
+        <li><b>Скорость: </b><?php echo $result['sp'] ?></li>
+        <li><b>Начальная температура: </b><?php echo $result['tem'] ?></li>
+        <li><b>Газовая постоянная: </b><?php echo $result['gas'] ?></li>
+        <li><b>Диаметр: </b><?php echo $result['dia'] ?></li>
+        <li><b>Кинематичская вязкость: </b><?php echo $result['visc'] ?></li>
+    </ul>
+
+    <p>Число Маха <b>M</b> = <?php echo $result['muchNumber'] ?></p>
+    <p><b>b<sub>2</sub></b> = <?php echo $result['b2'] ?> м</p>
+    <p>Кинематическая вязкость <b>&#957;</b>  = <?php echo $result['kinVisc'] ?></p>
+    <p>Число Рейнольдса <b>Re</b> = <?php echo $result['re'] ?></p>
+    <p>Соотношение <b>K<sub>s</sub>/D<sub>h</sub></b> = <?php echo round($result['ksDh'], 7) ?></p>
+    <p>Коэффициент <b>&#955;<sub>sp</sub></b> = <?php echo $result['LambdaSP'] ?></p>
+    <p>Коэффициент <b>&#955;<sub>&#8734;</sub></b> = <?php echo $result['LambdaBesc'] ?></p>
+<!--    --><?php //for ($i = 0; $i <= count($result['KPD']) -1; $i++): ?>
+<!--        <p>КПД <b>&#951;</b> в точке --><?php //echo $i +1 ?><!-- = --><?php //echo $result['KPD'][$i] ?><!--</p>-->
+<!--        <p>Коэффициент напора <b>&#968;</b> в точке --><?php //echo $i+1 ?><!-- = --><?php //echo $result['napor'][$i] ?><!--</p>-->
+<!--        <p>Коэффициент расхода <b>&#966;</b> в точке --><?php //echo $i+1 ?><!-- = --><?php //echo $result['rashod'][$i] ?><!--</p>-->
+<!--    --><?php //endfor; ?>
+    <table class="kpd-rashod">
+        <tr>
+            <th>КПД</th>
+            <th>Коеффициент напора</th>
+            <th>Коеффициент расхода</th>
+        </tr>
+        <?php for ($i = 0; $i <= count($result['KPD']) -1; $i++): ?>
+        <tr>
+            <td><?php echo round($result['KPD'][$i], 3) ?></td>
+            <td><?php echo round($result['napor'][$i], 3) ?></td>
+            <td><?php echo round($result['rashod'][$i], 3) ?></td>
+        </tr>
+        <?php endfor; ?>
+    </table>
+    <div class="result" id="kpd"></div>
+    <div class="result" id="psi"></div>
+    <script>
+        (function ($) {
+            $(document).ready(function () {
+                $('#kpd').highcharts({
+                    chart: {
+                        type: 'spline'
+                    },
+                    title: {
+                        text: 'Сравнительный график зависимостей КПД от коэффициента расхода'
+                    },
+                    subtitle: {
+                        text: 'Для воздуха и газа'
+                    },
+                    xAxis: {
+                        title: {
+                            text: '<span style="font-size: 15px; font-weight: bold;">φ</span>'
+                        }
+                    },
+                    yAxis: {
+                        title: {
+                            text: '<span style="font-size: 15px; font-weight: bold;">η</span>'
+                        }
+                    },
+                    tooltip: {
+                        headerFormat: '<b>{series.name}</b><br>',
+                        pointFormat: '<span>КПД: <b>{point.y}</b>; Коэф. расхода: <b>{point.x}</b></span>'
+                    },
+                    plotOptions: {
+                        spline: {
+                            marker: {
+                                enabled: true
+                            }
+                        },
+                        series: {
+                            allowPointSelect: true
+                        }
+                    },
+
+                    series: [{
+                        name: 'Воздух',
+                        data: [
+                            [0.0425, 0.78],
+                            [0.0525, 0.82],
+                            [0.061, 0.71],
+                            [0.0685, 0.76],
+                            [0.07, 0.68],
+                            [0.0725, 0.5]
+                        ]
+                    }, {
+                        name: 'Газ',
+                        data: [
+                            [<?php echo $result['rashod'][0] ?>, <?php echo $result['KPD'][0] ?>],
+                            [<?php echo $result['rashod'][1] ?>, <?php echo $result['KPD'][1] ?>],
+                            [<?php echo $result['rashod'][2] ?>, <?php echo $result['KPD'][2] ?>],
+                            [<?php echo $result['rashod'][3] ?>, <?php echo $result['KPD'][3] ?>],
+                            [<?php echo $result['rashod'][4] ?>, <?php echo $result['KPD'][4] ?>],
+                            [<?php echo $result['rashod'][5] ?>, <?php echo $result['KPD'][5] ?>]
+                        ]
+                    }]
+                });
+                $('#psi').highcharts({
+                    chart: {
+                        type: 'spline'
+                    },
+                    title: {
+                        text: 'Сравнительный график зависимостей коэффициента напора от коэффициента расхода'
+                    },
+                    subtitle: {
+                        text: 'Для воздуха и газа'
+                    },
+                    xAxis: {
+                        title: {
+                            text: '<span style="font-size: 15px; font-weight: bold;">φ</span>'
+                        }
+                    },
+                    yAxis: {
+                        title: {
+                            text: '<span style="font-size: 15px; font-weight: bold;">ψ</span>'
+                        }
+                    },
+                    tooltip: {
+                        useHTML: true,
+                        shared: true,
+                        headerFormat: '',
+                        pointFormat: '<b>{series.name}</b><br><span>Коэф. напора: <b>{point.y}</b>; Коэф. расхода: <b>{point.x}</b></span>'
+                    },
+                    plotOptions: {
+                        spline: {
+                            marker: {
+                                enabled: true
+                            }
+                        },
+                        series: {
+                            allowPointSelect: true
+                        }
+                    },
+
+                    series: [{
+                        name: 'Воздух',
+                        data: [
+                            [0.0425, 0.59],
+                            [0.0525, 0.58],
+                            [0.061, 0.55],
+                            [0.0685, 0.43],
+                            [0.07, 0.4],
+                            [0.0725, 0.27]
+                        ]
+                    }, {
+                        name: 'Газ',
+                        data: [
+                            [<?php echo $result['rashod'][0] ?>, <?php echo $result['napor'][0] ?>],
+                            [<?php echo $result['rashod'][1] ?>, <?php echo $result['napor'][1] ?>],
+                            [<?php echo $result['rashod'][2] ?>, <?php echo $result['napor'][2] ?>],
+                            [<?php echo $result['rashod'][3] ?>, <?php echo $result['napor'][3] ?>],
+                            [<?php echo $result['rashod'][4] ?>, <?php echo $result['napor'][4] ?>],
+                            [<?php echo $result['rashod'][5] ?>, <?php echo $result['napor'][5] ?>]
+                        ]
+                    }]
+                });
+            });
+        })(jQuery);
+    </script>
+    <?php else: ?>
+    <h2>Нет результатов. Перейти на страницу для выбора <a href="/">расчета</a></h2>
+<?php endif; ?>

@@ -1,0 +1,11 @@
+<h1>Изменение аватара</h1>
+<?php if(isset($data['errors']) && is_array($data['errors'])):
+    foreach($data['errors'] as $error): ?>
+<p><?php echo $error ?></p>
+<?php endforeach;
+ endif; ?>
+<form enctype="multipart/form-data" action="/user/update/7" method="post">
+    <label for="img">Выберите изображение формата "JPG", не более 2 МБ:</label>
+    <p><input type="file" name="img" id="img" accept="image/jpeg"></p>
+    <input type="submit" value="Применить">
+</form>

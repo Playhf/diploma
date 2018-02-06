@@ -1,0 +1,16 @@
+<h1>Удаление профиля</h1>
+<?php if(isset($data['errors']) && is_array($data['errors'])):
+    foreach($data['errors'] as $error): ?>
+<p><?php echo $error ?></p>
+<?php endforeach;
+ endif; ?>
+<form action="/user/delete/" method="post">
+    <label for="userPassword">Введите пароль: </label>
+    <p><input type="password" id="userPassword" name="userPassword" required></p>
+    <label for="userPassConfirm">Подтвердите пароль: </label>
+    <p><input type="password" id="userPassConfirm" name="userPassConfirm" required></p>
+    <p>Для подтверждение введите текст с картинки:</p>
+    <img src="/template/images/captcha.php"><br>
+    <input required type="text" name="captcha">
+    <input type="submit" value="Подтвердить">
+</form>

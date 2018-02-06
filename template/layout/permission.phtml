@@ -1,0 +1,33 @@
+<p>Выберите, кому дать право на расчет:</p>
+<form action="/admin/form/" method="post" id="sender">
+    <label for="students"></label>
+    <select id="students" name="students[]" multiple>
+        <?php if (isset($data) && is_array($data)): ?>
+            <?php foreach($data as $student): ?>
+                <option value="<?php echo $student['id'] ?>">
+                    <?php echo $student['login'] ?>
+                </option>
+            <?php endforeach; ?>
+            <?php else: ?>
+                <p><?php echo $data ?></p>
+        <?php endif; ?>
+    </select>
+</form>
+<button type="submit" id="sendForm" form="sender">Отправить</button>
+<span class="hidden">Выберите кому дать доступ</span>
+<?php //echo '</br>', $user['login']; ?>
+<script>
+    (function ($) {
+        $(document).ready(function () {
+            $('#sendForm').on('click', function (e) {
+                var selectVals = $('#students').val();
+                if (selectVals != null) {
+                    console.log('Start changing student permission');
+                } else {
+                    e.preventDefault();
+                    $('.hidden').show();
+                }
+            });
+        });
+    })(jQuery);
+</script>
