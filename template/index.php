@@ -5,6 +5,7 @@
     <link href="/template/style/style.css" rel="stylesheet">
     <script src="/jslib/jquery-1.12.0.js"></script>
     <script src="/jslib/jquery.validate.js"></script>
+    <script src="/jslib/custom/errMsgs.js"></script>
     <?php if ($opt['content'] == 'result_ptc.phtml'): ?>
         <script src="/jslib/highcharts/highcharts.js"></script>
     <?php endif; ?>

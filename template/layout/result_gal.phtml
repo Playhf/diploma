@@ -1,3 +1,7 @@
 <?php if ($session['galerkin_result']): $result = $session['galerkin_result'] ?>
-<?php var_dump($result); ?>
+    <?php var_dump($result); ?>
+
+
+<?php else: ?>
+    <h2>Нет результатов. Перейти на страницу для выбора <a href="/">расчета</a></h2>
 <?php endif;

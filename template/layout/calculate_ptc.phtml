@@ -33,6 +33,10 @@
     </div>
     <script>
         (function ($) {
+            $.extend($.validator.messages, {
+                required: 'Это поле обязательное для заполнения',
+                number: 'Только числовые значение можно вводить в это поле'
+            });
             $(document).ready(function () {
                 $('#calculate').validate({
                     rules: {
@@ -40,19 +44,35 @@
                             required: true,
                             number: true
                         },
+                        ra: {
+                            required: true,
+                            number: true
+                        },
+                        sp: {
+                            required: true,
+                            number: true
+                        },
                         tem: {
                             required: true,
                             number: true,
                             minlength: 3
+//                            max:
+                        },
+                        gas: {
+                            required: true,
+                            number: true
+                        },
+                        dia: {
+                            required: true,
+                            number: true
+                        },
+                        visc: {
+                            required: true,
+                            number: true
                         }
                     },
                     messages: {
-                        pr: {
-                            required: 'Это поле обязательное для заполнения.',
-                            number: "Только числовые значение можно вводить в это поле"
-                        },
                         tem: {
-                            required: 'Это поле обязательное для заполнения.',
                             minlength: 'Длина этого поля должна быть не менне 3-х символов.'
                         }
                     }

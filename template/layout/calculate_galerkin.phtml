@@ -44,3 +44,56 @@
         <input type="submit" value="Рассчитать">
     </div>
 </form>
+<script>
+    (function ($) {
+        $(document).ready(function () {
+            $.validator.addMethod('le', function (value, element, param) {
+                return this.optional(element) || parseInt(value) >= parseInt($(param).val());
+            }, 'Значение конечной температуры не может быть меньше начальной.');
+
+            $('#calculate').validate({
+                rules: {
+                    temprNach: {
+                        required: true,
+                        number: true
+                    },
+                    temprKon: {
+                        required: true,
+                        number: true,
+                        le: '#temprNach'
+                    },
+                    mass: {
+                        required: true,
+                        number: true
+                    },
+                    pnach: {
+                        required: true,
+                        number: true
+                    },
+                    pkoniec: {
+                        required: true,
+                        number: true,
+                        le: '#pnach'
+                    },
+                    gazpost: {
+                        required: true,
+                        number: true
+                    },
+                    adiabata: {
+                        required: true,
+                        number: true
+                    },
+                    rashod: {
+                        required: true,
+                        number: true
+                    }
+                },
+                messages: {
+                    pkoniec: {
+                        le: 'Конечное давление не может быть меньше начального.'
+                    }
+                }
+            });
+        });
+    })(jQuery);
+</script>
