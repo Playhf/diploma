@@ -153,7 +153,6 @@ class UserModel extends DefModel
             } //upload new
             $result = $this->updateData($this->_db, $data['update'], $field, $id);
             if ($result) {
-//                $_SESSION[md5(session_id())][$field] = $data['update'];
                 return $data;
             } else {
                 $data['result'] = false;
@@ -161,6 +160,7 @@ class UserModel extends DefModel
             }
         }
     }
+
     /**
      * check is uploaded file have an errors
      * @return array|null

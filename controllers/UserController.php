@@ -63,8 +63,6 @@ class UserController extends SiteController
                 'content' => /*($param == 7) ? 'updateimg.phtml' :*/ 'updatetext.phtml'
             );
             $data = array();
-//            $data['update']     = isset($_FILES['img'])     ? $_FILES['img']['name'] : null;
-//            if (!$data['update'])
             $data['update'] = isset($_POST['update'])   ? $_POST['update'] : null;
             $data['param'] = $param;
             if ($data['update'] == null){
@@ -76,7 +74,6 @@ class UserController extends SiteController
                 if (in_array(false, $result))
                     $this->indexAction($opt, $result);
                 else
-//                    $this->profileAction();
                     $this->_redirect('/user/profile/');
             }
         }
