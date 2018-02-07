@@ -46,27 +46,26 @@ class UserController extends SiteController
                 $this->registerAction($result);
             }
             else {
-                $this->indexAction(); /** * */
+//                $this->indexAction();
                 $this->_redirect("/");
             }
-        }
-        else
-            $this->registerAction();
+        }  else
+               $this->registerAction();
     }
 
     public function updateAction($param)
     {
-        if ($param == null || $param <1 || $param >7)
+        if ($param == null || $param <1 || $param >3)
             $this->notFoundAction();
         if ($this->isLogged()){
             $opt = array(
                 'title'   => 'Редактирование профиля',
-                'content' => ($param == 7) ? 'updateimg.phtml' : 'updatetext.phtml'
+                'content' => /*($param == 7) ? 'updateimg.phtml' :*/ 'updatetext.phtml'
             );
             $data = array();
-            $data['update']     = isset($_FILES['img'])     ? $_FILES['img']['name'] : null;
-            if (!$data['update'])
-                $data['update'] = isset($_POST['update'])   ? $_POST['update']       : null;
+//            $data['update']     = isset($_FILES['img'])     ? $_FILES['img']['name'] : null;
+//            if (!$data['update'])
+            $data['update'] = isset($_POST['update'])   ? $_POST['update'] : null;
             $data['param'] = $param;
             if ($data['update'] == null){
                 $this->indexAction($opt, $data);
@@ -77,7 +76,8 @@ class UserController extends SiteController
                 if (in_array(false, $result))
                     $this->indexAction($opt, $result);
                 else
-                    $this->profileAction();
+//                    $this->profileAction();
+                    $this->_redirect('/user/profile/');
             }
         }
     }

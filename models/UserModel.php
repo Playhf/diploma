@@ -105,32 +105,16 @@ class UserModel extends DefModel
             $type = null;
             switch ($data['param']) {
                 case 1:
-                    $field = 'fname';
-                    $type = 'un';
-                    break;
-                case 2:
-                    $field = 'lname';
-                    $type = 'un';
-                    break;
-                case 3:
                     $field = 'login';
                     $type = 'ul';
                     break;
-                case 4:
+                case 2:
                     $field = 'email';
                     $type = 'ue';
                     break;
-                case 5:
-                    $field = 'birthday';
-                    $type = 'dt';
-                    break;
-                case 6:
-                    $field = 'phone';
-                    $type = 'ph';
-                    break;
-                case 7:
-                    $field = 'img';
-                    $type = 'im';
+                case 3:
+                    $field = 'group';
+                    $type = 'ug';
                     break;
             }
             $this->_db = $this->DbConnection();
@@ -169,7 +153,7 @@ class UserModel extends DefModel
             } //upload new
             $result = $this->updateData($this->_db, $data['update'], $field, $id);
             if ($result) {
-                $_SESSION[md5(session_id())][$field] = $data['update'];
+//                $_SESSION[md5(session_id())][$field] = $data['update'];
                 return $data;
             } else {
                 $data['result'] = false;

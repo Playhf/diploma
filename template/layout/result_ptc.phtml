@@ -1,13 +1,13 @@
 <?php if ($session['result']): $result = $session['result'] ?>
     <h2>Результат расчета характеристик компрессора с исходными данными: </h2>
     <ul>
-        <li><b>Давление: </b><?php echo $result['pr'] ?></li>
-        <li><b>Шероховатость: </b><?php echo $result['ra'] ?></li>
-        <li><b>Скорость: </b><?php echo $result['sp'] ?></li>
-        <li><b>Начальная температура: </b><?php echo $result['tem'] ?></li>
-        <li><b>Газовая постоянная: </b><?php echo $result['gas'] ?></li>
-        <li><b>Диаметр: </b><?php echo $result['dia'] ?></li>
-        <li><b>Кинематичская вязкость: </b><?php echo $result['visc'] ?></li>
+        <li><b>Давление: </b><?php echo $result['pr'] ?> бар</li>
+        <li><b>Шероховатость: </b><?php echo $result['ra'] ?> мкм</li>
+        <li><b>Скорость (u<sub>2</sub>): </b><?php echo $result['sp'] ?> м/с</li>
+        <li><b>Начальная температура: </b><?php echo $result['tem'] ?> К</li>
+        <li><b>Газовая постоянная: </b><?php echo $result['gas'] ?> Дж/(кг*К)</li>
+        <li><b>Диаметр (D<sub>2</sub>): </b><?php echo $result['dia'] ?> мм</li>
+        <li><b>Динамическая вязкость: </b><?php echo $result['visc'] ?></li>
     </ul>
 
     <p>Число Маха <b>M</b> = <?php echo $result['muchNumber'] ?></p>
@@ -23,6 +23,7 @@
 <!--        <p>Коэффициент расхода <b>&#966;</b> в точке --><?php //echo $i+1 ?><!-- = --><?php //echo $result['rashod'][$i] ?><!--</p>-->
 <!--    --><?php //endfor; ?>
     <table class="kpd-rashod">
+        <caption>Результаты безразмерных характеристик газа в 6-ти точках</caption>
         <tr>
             <th>КПД</th>
             <th>Коеффициент напора</th>

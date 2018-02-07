@@ -16,6 +16,7 @@ class DefModel
      */
     public function validData($data, $type = ""){
         switch ($type){
+            case 'ug':
             case "ul"://user-login. no russian 4-30 characters
                 preg_match('/[A-Za-z0-9\)\(_\-]{4,30}/u', $data, $arr);
                 return strlen($data) == strlen($arr[0]) ? $arr[0]
@@ -237,7 +238,7 @@ class DefModel
      */
     public function updateData($db, $data, $field, $id)
     {
-        $sql = "UPDATE `users` SET {$field}='" . $data . "' WHERE id=?";
+        $sql = "UPDATE `users` SET `{$field}`='" . $data . "' WHERE `id`=?";
         try {
             $stmt = $db->prepare($sql);
             $result = $stmt->execute(array($id));
