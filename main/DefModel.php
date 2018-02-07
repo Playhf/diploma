@@ -70,10 +70,10 @@ class DefModel
                 continue;
             switch ($key) {
                 case 'login':
-                    $errors['login'] = 'Неверный формат ввода логина';
+                    $errors['login'] = 'Логин должен состоять минимум из латинских имволов. Допускает включение цифр.';
                     break;
                 case 'password':
-                    $errors['password'] = 'Неверный формат ввода пароля';
+                    $errors['password'] = 'Пароль должен состоять минимум из 6-ти символов. Латинские буквы или цифры.';
                     break;
                 case 'email':
                     $errors['email'] = 'Неверный формат ввода email';
