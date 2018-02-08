@@ -1,6 +1,6 @@
 <?php
-ini_set("display_errors", 1);
-error_reporting(E_ALL & ~E_NOTICE);
+#ini_set("display_errors", 1);
+#error_reporting(E_ALL & ~E_NOTICE);
 define('DS', DIRECTORY_SEPARATOR);
 
 set_include_path( get_include_path()     . PATH_SEPARATOR . "controllers/"

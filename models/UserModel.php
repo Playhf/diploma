@@ -46,7 +46,7 @@ class UserModel extends DefModel
             //if inserted get id
             $data['id']     = $this->_db->lastInsertId();
             //if everything is ok
-            $this->userSession($data);
+            $this->userSession(array('id' => $data['id']));
             return $data;
         }
         else {

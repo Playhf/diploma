@@ -6,7 +6,7 @@
  * Time: 13:34
  */
 
-class GalerkinModel
+class GalerkinModel implements Calculate
 {
 
     protected $_politropKPD;
@@ -59,7 +59,7 @@ class GalerkinModel
 
     protected function calculateNN($k)
     {
-        $this->_NN = $this->_politropKPD*($k/($k-1));
+        $this->_NN = $this->_politropKPD*$k/($k-1);
     }
 
     protected function calculateOtnDavl($pN, $pK)
@@ -95,5 +95,24 @@ class GalerkinModel
     protected function calculateM()
     {
         $this->_m = $this->_koefRashoda*(M_PI/4)*pow($this->_d2, 2)*pow($this->_u,2)*$this->_plotnost;
+    }
+
+    public function getPrintContent($values, $user)
+    {
+        $time = date('Y-m-d H:i');
+        $content = <<<DOC
+        <p>Расчет для студента группы <b>{$user['group']}</b></p>
+        <p>Логин: <b>{$user['login']}</b></p>
+        <p>Время расчета: <b>{$time}</b></p>
+        <p><b>Политропный КПД: </b> {$values['politrop_kpd']}</p>
+        <p><b>Отношение давлений П: </b> {$values['otnDavl']}</p>
+        <p><b>Политропный напор: </b> {$values['politrop_napor']}</p>
+        <p><b>h<sub>i</sub>: </b> {$values['hi']}</p>
+        <p><b>Диаметр D<sub>2</sub>: </b> {$values['d2']}</p>
+        <p><b>Плотность: </b> {$values['plotnost']}</p>
+        <p><b>Массовый расход: </b> {$values['massRashod']}</p>
+        
+DOC;
+        return $content;
     }
 }

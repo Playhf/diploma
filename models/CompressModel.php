@@ -1,6 +1,6 @@
 <?php
 
-class CompressModel
+class CompressModel implements Calculate
 {
     const A = 0.3;
     const N = 1;
@@ -132,5 +132,10 @@ class CompressModel
     public function getRotationFrequency()
     {
         return $this->rotationFrequency;
+    }
+
+    public function getPrintContent($values, $user)
+    {
+
     }
 }

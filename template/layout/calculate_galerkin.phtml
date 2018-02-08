@@ -48,7 +48,7 @@
     (function ($) {
         $(document).ready(function () {
             $.validator.addMethod('le', function (value, element, param) {
-                return this.optional(element) || parseInt(value) >= parseInt($(param).val());
+                return this.optional(element) || parseInt(value) > parseInt($(param).val());
             }, 'Значение конечной температуры не может быть меньше начальной.');
 
             $('#calculate').validate({

@@ -38,6 +38,9 @@
     <script>
         (function ($) {
             $(document).ready(function () {
+                $('#toDoc').on('click', function () {
+                    window.location = '/compr/print/ptc/';
+                });
                 $('#kpd').highcharts({
                     chart: {
                         type: 'spline'

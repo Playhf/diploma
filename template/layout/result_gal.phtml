@@ -1,7 +1,24 @@
 <?php if ($session['galerkin_result']): $result = $session['galerkin_result'] ?>
-    <?php var_dump($result); ?>
-
-
+    <ul>
+        <li><b>Политропный КПД: </b><?php echo $result['politrop_kpd'] ?></li>
+        <li><b>Отношение давлений: </b><?php echo $result['otnDavl'] ?></li>
+        <li><b>Политропный напор: </b><?php echo $result['politrop_napor'] ?></li>
+        <li><b>Ур. бернулли(закон сохранения эн-и)(h<sub>i</sub>): </b><?php echo $result['hi'] ?></li>
+        <li><b>Окружная скорость u<sub>2</sub>: </b><?php echo $result['u'] ?></li>
+        <li><b>Массовый расход: </b><?php echo $result['massRashod'] ?></li>
+    </ul>
+    <div>
+        <span><button type="button" id="toDoc">Скачать</button> в текстовом варианте</span>
+    </div>
 <?php else: ?>
     <h2>Нет результатов. Перейти на страницу для выбора <a href="/">расчета</a></h2>
-<?php endif;
+<?php endif; ?>
+<script>
+    (function ($) {
+        $(document).ready(function () {
+            $('#toDoc').on('click', function () {
+                window.location = '/compr/print/gal/';
+            });
+        });
+    })(jQuery);
+</script>

@@ -16,7 +16,8 @@ class ComprController extends SiteController
                 case 'galerkin':
                     $opt = array(
                         'title'     => 'Расчет характеристик методикой Галеркина',
-                        'content'   => 'calculate_galerkin.phtml');
+                        'content'   => 'calculate_galerkin.phtml'
+                    );
                     $this->_model   = new CompressModel();
                     break;
                 default:
@@ -37,7 +38,7 @@ class ComprController extends SiteController
 //                $d['result'] = true;
 //                $_SESSION['data'] = $d;
                 $this->_session['result'] = $d;
-                $this->_redirect('/compr/result/ptc');
+                $this->_redirect('/compr/result/ptc/');
             }
         }
     }
@@ -50,7 +51,7 @@ class ComprController extends SiteController
                 $this->_model = new GalerkinModel();
                 $result = $this->_model->calculateCharacteristics($data);
                 $this->_session['galerkin_result'] = $result;
-                $this->_redirect('/compr/result/gal');
+                $this->_redirect('/compr/result/gal/');
             }
         }
     }
@@ -77,6 +78,18 @@ class ComprController extends SiteController
             }
             $this->indexAction($opt);
         }
+    }
+
+    public function printAction($method)
+    {
+//        header('Content-type: text/html; charset=UTF-8');
+        header('Content-type: application/vnd.openxmlformats-officedocument.wordprocessingml.document');
+        header("Content-Disposition: attachment; filename=\"" . $this->_user['login'] . "-result.docx" . "\"");
+        $values = ($method == 'gal') ? $this->_session['galerkin_result'] : $this->_session['result'];
+        $this->_model  = ($method == 'gal') ? new GalerkinModel() : new CompressModel();
+        $content = $this->_model->getPrintContent($values, $this->_user);
+        print $content;
+        exit();
     }
 
     public function exampleAction()
