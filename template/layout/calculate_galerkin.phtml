@@ -1,49 +1,55 @@
-<h2>Введите исходные данные для расчета характеристик ступени</h2>
-<form id="calculate" action="/compr/countgal/" method="post" >
-    <div class="form-group">
-        <label for="temprNach">Начальная температура, К: </label>
-        <input type="text" id="temprNach" name="temprNach">
-    </div>
-    <div class="form-group">
-        <label for="temprKon">Конечная температура, К: </label>
-        <input type="text" id="temprKon" name="temprKon">
-    </div>
-    <div class="form-group">
-        <label for="mass">Массовый расход, кг/с: </label>
-        <input type="text" id="mass" name="mass">
-    </div>
-    <div class="form-group">
-        <label for="pnach">Начальное давление, МПа: </label>
-        <input type="text" id="pnach" name="pnach">
-    </div>
-    <div class="form-group">
-        <label for="pkoniec">Конечное давление, МПа: </label>
-        <input type="text" id="pkoniec" name="pkoniec">
-    </div>
-    <div class="form-group">
-        <label for="gazpost">Газовая постоянная, Дж/кгК: </label>
-        <input type="text" id="gazpost" name="gazpost">
-    </div>
-    <div class="form-group">
-        <label for="adiabata">Показатель адиабаты: </label>
-        <input type="text" id="adiabata" name="adiabata">
-    </div>
-    <div class="form-group">
-        <label for="rashod">Расчетный коэффициент расхода: </label>
-        <input type="text" id="rashod" name="rashod">
-    </div>
-    <div class="form-group">
-        <label for="n">Частота вращения ротора: </label>
-        <select id="n" name="n">
-            <?php foreach ($data->getRotationFrequency() as $item): ?>
-                <option value="<?php echo $item ?>"><?php echo $item ?></option>
-            <?php endforeach; ?>
-        </select>
-    </div>
-    <div class="form-group">
-        <input type="submit" value="Рассчитать">
-    </div>
-</form>
+<div class="container">
+	<div class="row">
+		<div class="col-12">
+			<h1 class="heading">Введите исходные данные для расчета характеристик ступени</h1>
+			<form id="calculate" action="/compr/countgal/" method="post" >
+				<div class="form-group">
+					<label for="temprNach">Начальная температура, К: </label>
+					<input type="text" class="form-control" id="temprNach" name="temprNach">
+				</div>
+				<div class="form-group">
+					<label for="temprKon">Конечная температура, К: </label>
+					<input type="text" class="form-control" id="temprKon" name="temprKon">
+				</div>
+				<div class="form-group">
+					<label for="mass">Массовый расход, кг/с: </label>
+					<input type="text" class="form-control" id="mass" name="mass">
+				</div>
+				<div class="form-group">
+					<label for="pnach">Начальное давление, МПа: </label>
+					<input type="text" class="form-control" id="pnach" name="pnach">
+				</div>
+				<div class="form-group">
+					<label for="pkoniec">Конечное давление, МПа: </label>
+					<input type="text" class="form-control" id="pkoniec" name="pkoniec">
+				</div>
+				<div class="form-group">
+					<label for="gazpost">Газовая постоянная, Дж/кгК: </label>
+					<input type="text" class="form-control" id="gazpost" name="gazpost">
+				</div>
+				<div class="form-group">
+					<label for="adiabata">Показатель адиабаты: </label>
+					<input type="text" class="form-control" id="adiabata" name="adiabata">
+				</div>
+				<div class="form-group">
+					<label for="rashod">Расчетный коэффициент расхода: </label>
+					<input type="text" class="form-control" id="rashod" name="rashod">
+				</div>
+				<div class="form-group">
+					<label for="n">Частота вращения ротора: </label>
+					<select id="n" class="form-control" name="n">
+						<?php foreach ($data->getRotationFrequency() as $item): ?>
+							<option value="<?php echo $item ?>"><?php echo $item ?></option>
+						<?php endforeach; ?>
+					</select>
+				</div>
+				<div class="form-group">
+					<input type="submit" class="button" value="Рассчитать">
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
 <script>
     (function ($) {
         $(document).ready(function () {

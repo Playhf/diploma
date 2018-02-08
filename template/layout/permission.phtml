@@ -1,20 +1,29 @@
-<p>Выберите, кому дать право на расчет:</p>
-<form action="/admin/form/" method="post" id="sender">
-    <label for="students"></label>
-    <select id="students" name="students[]" multiple>
-        <?php if (isset($data) && is_array($data)): ?>
-            <?php foreach($data as $student): ?>
-                <option value="<?php echo $student['id'] ?>">
-                    <?php echo $student['login'] ?>
-                </option>
-            <?php endforeach; ?>
-            <?php else: ?>
-                <p><?php echo $data ?></p>
-        <?php endif; ?>
-    </select>
-</form>
-<button type="submit" id="sendForm" form="sender">Отправить</button>
-<span class="hidden">Выберите кому дать доступ</span>
+
+<div class="container">
+	<div class="row">
+		<div class="col-12">
+			<h1 class="heading">
+				Выберите, кому дать право на расчет
+			</h1>
+
+			<form action="/admin/form/" method="post" id="sender">
+				<label for="students"></label>
+				<select id="students" name="students[]" multiple>
+					<?php if (isset($data) && is_array($data)): ?>
+						<?php foreach($data as $student): ?>
+							<option value="<?php echo $student['id'] ?>">
+								<?php echo $student['login'] ?>
+							</option>
+						<?php endforeach; ?>
+					<?php else: ?>
+						<p><?php echo $data ?></p>
+					<?php endif; ?>
+				</select>
+			</form>
+			<button type="submit" id="sendForm" form="sender" class="button">Отправить</button>
+		</div>
+	</div>
+</div>
 <?php //echo '</br>', $user['login']; ?>
 <script>
     (function ($) {

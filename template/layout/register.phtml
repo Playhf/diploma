@@ -1,16 +1,45 @@
-<h1>Регистрация</h1>
-<?php if(isset($data['errors']) && is_array($data['errors'])):
-    foreach($data['errors'] as $error): ?>
-        <p><?php echo $error ?></p>
-    <?php endforeach;
- endif; ?>
-<form action="/user/new" method="post">
-    <label>Ваш Логин: <input type="text" name="userLogin" value="<?php echo $data['login']?>"></label><br><br>
-    <label>Ваш пароль: <input type="password" name="userPassword"></label><br><br>
-    <label>Подтвердите пароль: <input type="password" name="userPassConfirm"></label><br><br>
-    <label>Ваш email: <input type="text" name="userEmail" value="<?php echo $data['email']?>"></label><br><br>
-    <label>Ваша группа: <input type="text" name="userGroup" value="<?php echo $data['group']?>"></label><br><br>
-    <img src="/template/images/captcha.php">
-    <p>Введите текст с картинки: <input required type="text" name="captcha"></p>
-    <input type="submit" value="Регистрация">
-</form>
+<div class="container">
+	<div class="row">
+		<div class="col-12">
+			<h1 class="heading">Регистрация</h1>
+			<?php if(isset($data['errors']) && is_array($data['errors'])):
+				foreach($data['errors'] as $error): ?>
+					<p><?php echo $error ?></p>
+				<?php endforeach;
+			endif; ?>
+			<form action="/user/new" method="post" class="registration-form">
+				<div class="form-group">
+					<label>Введите Логин</label>
+					<input type="text" class="form-control" name="userLogin" value="<?php echo $data['login']?>">
+				</div>
+
+				<div class="form-group">
+					<label>Введите пароль: </label>
+					<input type="password" class="form-control" name="userPassword">
+				</div>
+
+				<div class="form-group">
+					<label>Подтвердите пароль</label>
+					<input type="password" class="form-control" name="userPassConfirm">
+				</div>
+
+				<div class="form-group">
+					<label>Введите email</label>
+					<input type="text" class="form-control" name="userEmail" value="<?php echo $data['email']?>">
+				</div>
+
+				<div class="form-group">
+					<label>Введите группу</label>
+					<input type="text" class="form-control" name="userGroup" value="<?php echo $data['group']?>">
+				</div>
+
+				<div class="form-group">
+					<img src="/template/images/captcha.php">
+					<label style="display: block;">Введите текст с картинки</label>
+					<input required type="text" class="form-control" name="captcha">
+				</div>
+				<input type="submit" class="button" value="Регистрация">
+			</form>
+		</div>
+	</div>
+</div>

@@ -1,18 +1,36 @@
-<?php if ($session['galerkin_result']): $result = $session['galerkin_result'] ?>
-    <ul>
-        <li><b>Политропный КПД: </b><?php echo $result['politrop_kpd'] ?></li>
-        <li><b>Отношение давлений: </b><?php echo $result['otnDavl'] ?></li>
-        <li><b>Политропный напор: </b><?php echo $result['politrop_napor'] ?></li>
-        <li><b>Ур. бернулли(закон сохранения эн-и)(h<sub>i</sub>): </b><?php echo $result['hi'] ?></li>
-        <li><b>Окружная скорость u<sub>2</sub>: </b><?php echo $result['u'] ?></li>
-        <li><b>Массовый расход: </b><?php echo $result['massRashod'] ?></li>
-    </ul>
-    <div>
-        <span><button type="button" id="toDoc">Скачать</button> в текстовом варианте</span>
-    </div>
-<?php else: ?>
-    <h2>Нет результатов. Перейти на страницу для выбора <a href="/">расчета</a></h2>
-<?php endif; ?>
+<div class="container">
+	<div class="row">
+		<div class="col-12">
+			<?php if ($session['galerkin_result']): $result = $session['galerkin_result'] ?>
+				<table>
+					<thead>
+					<th>Политропный КПД</th>
+					<th>Отношение давлений</th>
+					<th>Политропный напор</th>
+					<th>Ур. бернулли(закон сохранения эн-и)(h<sub>i</sub>)</th>
+					<th>Окружная скорость u<sub>2</sub></th>
+					<th>Массовый расход</th>
+					</thead>
+					<tbody>
+					<tr>
+						<td><?php echo $result['politrop_kpd'] ?></td>
+						<td><?php echo $result['otnDavl'] ?></td>
+						<td><?php echo $result['politrop_napor'] ?></td>
+						<td><?php echo $result['hi'] ?></td>
+						<td><?php echo $result['u'] ?></td>
+						<td><?php echo $result['massRashod'] ?></td>
+					</tr>
+					</tbody>
+				</table>
+				<div>
+					<button type="button" class="button" id="toDoc">Скачать в текстовом формате</button>
+				</div>
+			<?php else: ?>
+				<h2>Нет результатов. Перейти на страницу для выбора <a href="/">расчета</a></h2>
+			<?php endif; ?>
+		</div>
+	</div>
+</div>
 <script>
     (function ($) {
         $(document).ready(function () {

@@ -1,16 +1,22 @@
-<?php if ($user['is_head'] == 1): ?>
-    <p><b>Привет, повелитель!</b></p>
-<?php elseif ($user['is_admin'] == 1): ?>
-    <p><b>Здарова, админ</b></p>
-<?php endif; ?>
-<p>Дать право на расчет</p>
-<button type="button">Go!</button>
+<div class="container">
+	<div class="row">
+		<div class="col-12">
+			<?php if ($user['is_head'] == 1): ?>
+				<h1 class="heading">Привет, повелитель!</h1>
+			<?php elseif ($user['is_admin'] == 1): ?>
+				<p><b>Здарова, админ</b></p>
+			<?php endif; ?>
+			<button type="button" class="button">Дать право на расчет</button>
+		</div>
+	</div>
+</div>
+
 <script>
-    (function ($) {
-        $(document).ready(function () {
-            $('button[type=button]').on('click', function () {
-                window.location = "/admin/permission/";
-            });
-        });
-    })(jQuery);
+	(function ($) {
+		$(document).ready(function () {
+			$('button[type=button]').on('click', function () {
+				window.location = "/admin/permission/";
+			});
+		});
+	})(jQuery);
 </script>

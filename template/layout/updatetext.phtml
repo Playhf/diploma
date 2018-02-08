@@ -1,10 +1,16 @@
-<h1>Редактирование профиля</h1>
-<?php if(isset($data['errors']) && is_array($data['errors'])):
-    foreach($data['errors'] as $error): ?>
-<p><?php echo $error ?></p>
-<?php endforeach;
- endif; ?>
-<form action=<?php echo "/user/update/" . $data["param"] ?> method="post">
-<p>Новые данные: <input required type="text" name="update" value=<?php echo $data["update"]?>></p>
-<input type="submit" value="Применить">
-</form>
+<div class="container">
+	<div class="row">
+		<div class="col-12">
+			<h1 class="heading">Редактирование профиля</h1>
+			<?php if(isset($data['errors']) && is_array($data['errors'])):
+				foreach($data['errors'] as $error): ?>
+					<p><?php echo $error ?></p>
+				<?php endforeach;
+			endif; ?>
+			<form action=<?php echo "/user/update/" . $data["param"] ?> method="post">
+				<p style="text-align: center; margin-top: 30px;">Новые данные: <input required type="text" name="update" value=<?php echo $data["update"]?>></p>
+				<input type="submit" value="Применить" class="button">
+			</form>
+		</div>
+	</div>
+</div>

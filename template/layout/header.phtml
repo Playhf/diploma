@@ -1,13 +1,36 @@
-<h1>не Шапка</h1>
-<?php if ($user['is_admin']): ?>
-    <a href="/admin/">Админка</a>
-<?php endif; ?>
-<a href="/">Главная</a>
-<?php if(isset($user)): ?>
-    <a href="/user/profile/">Личный кабинет</a>
-    <a href="/user/logout/">Выход</a>
-<?php else: ?>
-    <a href="/user/login/">Вход</a>
-<?php endif; ?>
-<a href="/about/">О нас</a>
-
+<!---->
+<?php //if ($user['is_admin']): ?>
+<!--    <a href="/admin/">Админка</a>-->
+<?php //endif; ?>
+<!--<a href="/">Главная</a>-->
+<?php //if(isset($user)): ?>
+<!--    <a href="/user/profile/">Личный кабинет</a>-->
+<!--    <a href="/user/logout/">Выход</a>-->
+<?php //else: ?>
+<!--    <a href="/user/login/">Вход</a>-->
+<?php //endif; ?>
+<!--<a href="/about/">О нас</a>-->
+<header class="header">
+	<div class="container">
+		<div class="row">
+			<div class="col-2">
+				<div class="logo">logo</div>
+			</div>
+			<div class="col-8">
+				<ul class="menu">
+					<li><a href="/">Главная</a></li>
+					<li><a href="/about/">О нас</a></li>
+					<?php if ($user['is_admin']): ?>
+						<li><a href="/admin/">Админка</a></li>
+					<?php endif; ?>
+					<?php if(isset($user)): ?>
+						<li><a href="/user/profile/">Личный кабинет</a></li>
+						<li><a href="/user/logout/">Выход</a></li>
+					<?php else: ?>
+						<li><a href="/user/login/">Вход</a></li>
+					<?php endif; ?>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>

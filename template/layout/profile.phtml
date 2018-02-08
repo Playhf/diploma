@@ -1,5 +1,13 @@
-<h2>Личный кабинет</h2>
+<div class="container">
+	<div class="row">
+		<div class="col-12">
+			<h1 class="heading">Личный кабинет</h1>
+			<div class="details">
+				<p>Логин: <b><?php echo $user['login'] ?></b> <a href="/user/update/1/">Изменить</a></p>
+				<p>Email: <b><?php echo $user['email'] ?></b> <a href="/user/update/2/">Изменить</a></p>
+				<p>Группа: <b><?php echo $user['group'] ?></b> <a href="/user/update/3/">Изменить</a></p>
+			</div>
 
-<p>Логин: <?php echo $user['login'] ?> <a href="/user/update/1/">Изменить</a></p>
-<p>Email: <?php echo $user['email'] ?> <a href="/user/update/2/">Изменить</a></p>
-<p>Группа: <?php echo $user['group'] ?> <a href="/user/update/3/">Изменить</a></p>
+		</div>
+	</div>
+</div>

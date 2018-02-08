@@ -43,3 +43,13 @@
 Файл: /var/www/galerkin.loc/public_html/main/DefModel.php
 Строка: 133
 
+Ошибка при подключении к базе данных.
+Ошибка: SQLSTATE[HY000] [1045] Access denied for user 'diplom'@'localhost' (using password: YES)
+Файл: D:\OpenServer\domains\diplom.loc\main\DefModel.php
+Строка: 134
+
+Ошибка при подключении к базе данных.
+Ошибка: SQLSTATE[HY000] [1045] Access denied for user 'diplom'@'localhost' (using password: YES)
+Файл: D:\OpenServer\domains\diplom.loc\main\DefModel.php
+Строка: 134
+
