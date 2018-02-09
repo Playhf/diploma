@@ -100,19 +100,32 @@ class GalerkinModel implements Calculate
     public function getPrintContent($values, $user)
     {
         $time = date('Y-m-d H:i');
-        $content = <<<DOC
-        <p>Расчет для студента группы <b>{$user['group']}</b></p>
-        <p>Логин: <b>{$user['login']}</b></p>
-        <p>Время расчета: <b>{$time}</b></p>
-        <p><b>Политропный КПД: </b> {$values['politrop_kpd']}</p>
-        <p><b>Отношение давлений П: </b> {$values['otnDavl']}</p>
-        <p><b>Политропный напор: </b> {$values['politrop_napor']}</p>
-        <p><b>h<sub>i</sub>: </b> {$values['hi']}</p>
-        <p><b>Диаметр D<sub>2</sub>: </b> {$values['d2']}</p>
-        <p><b>Плотность: </b> {$values['plotnost']}</p>
-        <p><b>Массовый расход: </b> {$values['massRashod']}</p>
-        
-DOC;
+//        $content = <<<DOC
+//        <p>Расчет для студента группы <b>{$user['group']}</b></p>
+//        <p>Логин: <b>{$user['login']}</b></p>
+//        <p>Время расчета: <b>{$time}</b></p>
+//        <p><b>Политропный КПД: </b> {$values['politrop_kpd']}</p>
+//        <p><b>Отношение давлений П: </b> {$values['otnDavl']}</p>
+//        <p><b>Политропный напор: </b> {$values['politrop_napor']}</p>
+//        <p><b>h<sub>i</sub>: </b> {$values['hi']}</p>
+//        <p><b>Диаметр D<sub>2</sub>: </b> {$values['d2']}</p>
+//        <p><b>Плотность: </b> {$values['plotnost']}</p>
+//        <p><b>Массовый расход: </b> {$values['massRashod']}</p>
+//
+//DOC;
+        $content = <<<TXT
+        Расчет для студента группы {$user['group']}\n
+        Логин: {$user['login']}\n
+        Время расчета: {$time}\n
+        Политропный КПД: {$values['politrop_kpd']}\n
+        Отношение давлений П: {$values['otnDavl']}\n
+        Политропный напор: {$values['politrop_napor']}\n
+        hi: {$values['hi']}\n
+        D2: {$values['d2']}\n
+        Плотность: {$values['plotnost']}\n
+        Массовый расход: {$values['massRashod']}\t\n
+TXT;
+
         return $content;
     }
 }

@@ -82,13 +82,24 @@ class ComprController extends SiteController
 
     public function printAction($method)
     {
-//        header('Content-type: text/html; charset=UTF-8');
-        header('Content-type: application/vnd.openxmlformats-officedocument.wordprocessingml.document');
-        header("Content-Disposition: attachment; filename=\"" . $this->_user['login'] . "-result.docx" . "\"");
+        header('Content-type: text/plain');
+        header("Content-Disposition: attachment; filename=\"" . $this->_user['login'] . "-result.txt" . "\"");
         $values = ($method == 'gal') ? $this->_session['galerkin_result'] : $this->_session['result'];
         $this->_model  = ($method == 'gal') ? new GalerkinModel() : new CompressModel();
         $content = $this->_model->getPrintContent($values, $this->_user);
         print $content;
+
+//        $client = new pdfcrowd('playhf', '52d123a2efd7c4ed2f1caf23973e2d34');
+//        $pdf = $client->convertHtml('<body><b>ggg</b></body>');
+//        header("Content-Type: application/pdf");
+//        header("Cache-Control: max-age=0");
+//        header("Accept-Ranges: none");
+//        header("Content-Disposition: attachment; filename=\"" . $this->_user['login'] . "-result.pdf" . "\"");
+
+//        $pdf = new \Dompdf\dompdf();
+//        $pdf->setPaper('A4');
+//        $pdf->loadHtml('<b>lol</b>');
+//        $pdf->render();
         exit();
     }
 

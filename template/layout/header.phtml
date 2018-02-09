@@ -19,7 +19,6 @@
 			<div class="col-8">
 				<ul class="menu">
 					<li><a href="/">Главная</a></li>
-					<li><a href="/about/">О нас</a></li>
 					<?php if ($user['is_admin']): ?>
 						<li><a href="/admin/">Админка</a></li>
 					<?php endif; ?>
@@ -29,7 +28,8 @@
 					<?php else: ?>
 						<li><a href="/user/login/">Вход</a></li>
 					<?php endif; ?>
-				</ul>
+                    <li><a href="/about/">О нас</a></li>
+                </ul>
 			</div>
 		</div>
 	</div>
