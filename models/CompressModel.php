@@ -1,141 +1,150 @@
 <?php
 
-class CompressModel implements Calculate
+class CompressModel
 {
     const A = 0.3;
     const N = 1;
     const KOEF = 0.5;
 
+    protected $_ishod;
 
-    protected $KPD = array(0.78, 0.82, 0.81, 0.76, 0.68, 0.5);
-    protected $Napor = array(0.59, 0.58, 0.55, 0.43, 0.4, 0.27);
-    protected $Rashod = array(0.0425, 0.0525, 0.061, 0.0685, 0.07, 0.0725);
-    protected $rotationFrequency = array(5460, 5300, 5200, 5000, 4600, 4200, 3640);
+    protected $_much;
+    protected $_b2;
+    protected $_kinVisc;
+    protected $_re;
+    protected $_ksDh;
+    protected $_LambdaSP;
+    protected $_LambdaBesc;
+    protected $KPD;
+    protected $NAPOR;
+    protected $RASHOD;
+
+    private $_KPD = array(0.78, 0.82, 0.81, 0.76, 0.68, 0.5);
+    private $_Napor = array(0.59, 0.58, 0.55, 0.43, 0.4, 0.27);
+    private $_Rashod = array(0.0425, 0.0525, 0.061, 0.0685, 0.07, 0.0725);
 
 
     public function getOptions($data)
     {
-        $data = array_map('floatval', $data);
+        $this->_ishod = array_map('floatval', $data);
         $listData = array_values($data);
         list($press, $ra, $speed, $temp, $gas, $diam, $dynVisc) = $listData;
+        $this->setMuch($speed, $gas, $temp);
+        $this->setB2($diam);
+        $this->setKinVisc($press * 10**5, $gas, $temp, $dynVisc * 10**-6);
+        $this->setRe($speed);
+        $this->setKsDh($ra);
+        $this->setDelLambdaSP();
+        $this->setDelLambdaBesc();
+        $this->setKPD();
+        $this->setNapor();
+        $this->setRashod();
 
-        $data['muchNumber'] = round($this->getMuch($speed, $gas, $temp), 2);  //число маха
-        $data['b2']         = $this->getB2($diam); //b2
-        $data['kinVisc']    = $this->getKinVisc($press * 10**5, $gas, $temp, $dynVisc * 10**-6);
-        $data['re']         = $this->getRe($speed, $data['b2'], $data['kinVisc']); // reinolds
-        $data['ksDh']       = $this->getKsDh($ra * 10**-6, $data['b2']);
-        $data['LambdaSP']     = $this->getDelLambdaSP($data['ksDh'], $data['re']);
-        $data['LambdaBesc']   = $this->getDelLambdaBesc($data['ksDh']);
-
-        $data['KPD'] = $this->getKPD($data['LambdaSP'],
-                                     $data['LambdaBesc'],
-                                     $this->KPD
+        $result = array(
+                'ishod' => $this->_ishod,
+                'promejutochnie' => array(
+                    $this->_much,
+                    $this->_b2,
+                    $this->_kinVisc,
+                    $this->_re,
+                    $this->_ksDh,
+                    $this->_LambdaSP,
+                    $this->_LambdaBesc
+                ),
+                'KPD'   => $this->KPD,
+                'napor' => $this->NAPOR,
+                'rashod'=> $this->RASHOD
         );
 
-        $data['napor'] = $this->getNapor( $data['KPD'],
-                                          $this->Napor
-        );
-
-        $data['rashod']  = $this->getRashod($this->Rashod,
-                                            $this->Napor,
-                                            $data['napor']
-        );
-
-        return $data;
-    }
-
-    private function getRashod($sechenieRashoda, $naporSechenie, $napor)
-    {
-        $result = array();
-        for ($i = 0; $i <= count($sechenieRashoda) -1; $i++) {
-            $result[] = $sechenieRashoda[$i] * sqrt($napor[$i] / $naporSechenie[$i]);
-        }
         return $result;
     }
 
-    private function getNapor($KPD, $napor)
+    private function setRashod()
     {
         $result = array();
-        for ($i = 0; $i <= count($KPD) -1; $i++) {
-            $result[] = $napor[$i] * (self::KOEF + (self::KOEF*($KPD[$i]/$this->KPD[$i])));
+        for ($i = 0; $i <= count($this->_Rashod) -1; $i++) {
+            $result[] = $this->_Rashod[$i] * sqrt($this->NAPOR[$i] / $this->_Napor[$i]);
         }
-        return $result;
+        $this->RASHOD = $result;
     }
 
-    private function getKPD($LSP, $LBesc, $sechenie)
+    private function setNapor()
     {
         $result = array();
-        for ($i = 0; $i <= count($sechenie) -1; $i++) {
-            $result[] = -((self::N - $sechenie[$i])*((self::A + (self::N - self::A)*$LSP/$LBesc)
+        for ($i = 0; $i <= count($this->KPD) -1; $i++) {
+            $result[] = $this->_Napor[$i] * (self::KOEF + (self::KOEF*($this->KPD[$i]/$this->_KPD[$i])));
+        }
+        $this->NAPOR = $result;
+    }
+
+    private function setKPD()
+    {
+        $result = array();
+        for ($i = 0; $i <= count($this->_KPD) -1; $i++) {
+            $result[] = -((self::N - $this->_KPD[$i])*((self::A + (self::N - self::A)*$this->_LambdaSP/$this->_LambdaBesc)
                         /(self::A + (self::N - self::A)*0.0176/0.0151))) + self::N;
         }
-        return $result;
+        $this->KPD = $result;
     }
 
-    private function getDelLambdaBesc($ksDh)
+    private function setDelLambdaBesc()
     {
-        $result = self::N/(1.74-(2*log10(2*$ksDh)))**2;
-        return $result;
+        $result = self::N/(1.74-(2*log10(2*$this->_ksDh)))**2;
+        $this->_LambdaBesc = $result;
     }
 
-    private function getDelLambdaSP($ksDh, $re)
+    private function setDelLambdaSP()
     {
         $max = 0.9999;
         for ($i=round(0.0001, 4);
              $i<$max;
              $i+=round(0.0001, 4)){
-            $res = round(self::N/pow((1.74 - 2*log10(2*$ksDh + 18.7/$re*sqrt($i))), 2), 4, PHP_ROUND_HALF_UP);
-            if (round($i, 4) === $res)
-                return $i;
-            else
+//            $res = round(self::N/pow((1.74 - 2*log10(2*$ksDh + 18.7/$re*sqrt($i))), 2), 4, PHP_ROUND_HALF_UP);
+            $res = round(self::N/pow((1.74 - 2*log10(2*$this->_ksDh + 18.7/$this->_re*sqrt($i))), 2), 4, PHP_ROUND_HALF_UP);
+            if (round($i, 4) === $res) {
+                $this->_LambdaSP = $i;
+                return ;
+            } else {
                 continue;
+            }
         }
     }
 
-    private function getKsDh($ra, $b2)
+    private function setKsDh($ra)
     {
-        $result = $ra/$b2;
-        return $result;
+        $result = $ra*10**-6/$this->_b2;
+        $this->_ksDh = $result;
     }
 
-    private function getKinVisc($press, $gas, $temp, $dynVisc)
+    private function setKinVisc($press, $gas, $temp, $dynVisc)
     {
         $density = $this->getDensity($press, $gas, $temp); //плотность
         $result = $dynVisc/$density;
-        return  $result;
+        $this->_kinVisc = $result;
     }
 
-    private function getMuch($speed, $gas, $temp)
+    private function setMuch($speed, $gas, $temp)
     {
-        $result = $speed/sqrt(1.4 * $gas * $temp);
-        return $result;
+        $result = round($speed/sqrt(1.4 * $gas * $temp), 2);
+        //return $result;
+        $this->_much = $result;
     }
 
-    private function getB2($diam)
+    private function setB2($diam)
     {
         $result = 0.03 * (0.001*$diam);
-        return $result;
+        $this->_b2 = $result;
     }
 
-    private function getRe($speed, $b2, $visc)
+    private function setRe($speed)
     {
-        $result = ($speed*$b2)/$visc;
-        return round($result, 1);
+        $result = ($speed*$this->_b2)/$this->_kinVisc;
+        $this->_re = round($result, 1);
     }
 
     private function getDensity($press, $gas, $temp)
     {
         $result = $press/($gas*$temp);
         return $result;
-    }
-
-    public function getRotationFrequency()
-    {
-        return $this->rotationFrequency;
-    }
-
-    public function getPrintContent($values, $user)
-    {
-
     }
 }

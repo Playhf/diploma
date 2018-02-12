@@ -3,57 +3,44 @@
 	<div class="col-12">
 		<?php if ($session['result']): $result = $session['result'] ?>
 		<h1 class="heading">Результат расчета характеристик компрессора с исходными данными: </h1>
-<!--		<ul>-->
-<!--			<li><b>Давление: </b>--><?php //echo $result['pr'] ?><!-- бар</li>-->
-<!--			<li><b>Шероховатость: </b>--><?php //echo $result['ra'] ?><!-- мкм</li>-->
-<!--			<li><b>Скорость (u<sub>2</sub>): </b>--><?php //echo $result['sp'] ?><!-- м/с</li>-->
-<!--			<li><b>Начальная температура: </b>--><?php //echo $result['tem'] ?><!-- К</li>-->
-<!--			<li><b>Газовая постоянная: </b>--><?php //echo $result['gas'] ?><!-- Дж/(кг*К)</li>-->
-<!--			<li><b>Диаметр (D<sub>2</sub>): </b>--><?php //echo $result['dia'] ?><!-- мм</li>-->
-<!--			<li><b>Динамическая вязкость: </b>--><?php //echo $result['visc'] ?><!--</li>-->
-<!--		</ul>-->
 		<table>
 			<thead>
-			<th>Давление</th>
-			<th>Шероховатость</th>
-			<th>Скорость (u<sub>2</sub>)</th>
-			<th>Начальная температура</th>
-			<th>Газовая постоянная</th>
-			<th>Диаметр (D<sub>2</sub>)</th>
-			<th>Динамическая вязкость</th>
+			<tr>
+                <th>Давление, бар</th>
+                <th>Шероховатость, мкм</th>
+                <th>Скорость (u<sub>2</sub>)</th>
+                <th>Начальная температура, К</th>
+                <th>Газовая постоянная, Дж/(кг*К)</th>
+                <th>Диаметр (D<sub>2</sub>), мм</th>
+                <th>Динамическая вязкость</th>
+            </tr>
 			</thead>
 			<tbody>
 			<tr>
-				<td><?php echo $result['pr'] ?> бар</td>
-				<td><?php echo $result['ra'] ?> мкм</td>
-				<td><?php echo $result['sp'] ?> м/с</td>
-				<td><?php echo $result['tem'] ?> К</td>
-				<td><?php echo $result['gas'] ?> Дж/(кг*К)</td>
-				<td><?php echo $result['dia'] ?> мм</td>
-				<td><?php echo $result['visc'] ?></td>
+                <?php foreach($result['ishod'] as $item): ?>
+                    <td><?php echo $item ?></td>
+                <?php endforeach; ?>
 			</tr>
 			</tbody>
 		</table>
 
 		<table>
 			<thead>
-			<th>Число Маха <b>M</b></th>
-			<th><b>b<sub>2</sub></b></th>
-			<th>Кинематическая вязкость <b>&#957;</b></th>
-			<th>Число Рейнольдса <b>Re</b></th>
-			<th>Соотношение <b>K<sub>s</sub>/D<sub>h</sub></b></th>
-			<th>Коэффициент <b>&#955;<sub>sp</sub></b></th>
-			<th>Коэффициент <b>&#955;<sub>&#8734;</sub></b></th>
+			<tr>
+                <th>Число Маха <b>M</b></th>
+                <th><b>b<sub>2</sub></b></th>
+                <th>Кинематическая вязкость <b>&#957;</b></th>
+                <th>Число Рейнольдса <b>Re</b></th>
+                <th>Соотношение <b>K<sub>s</sub>/D<sub>h</sub></b></th>
+                <th>Коэффициент <b>&#955;<sub>sp</sub></b></th>
+                <th>Коэффициент <b>&#955;<sub>&#8734;</sub></b></th>
+            </tr>
 			</thead>
 			<tbody>
 			<tr>
-				<td><?php echo $result['muchNumber'] ?></td>
-				<td><?php echo $result['b2'] ?> м</td>
-				<td><?php echo $result['kinVisc'] ?></td>
-				<td><?php echo $result['re'] ?></td>
-				<td><?php echo round($result['ksDh'], 7) ?></td>
-				<td><?php echo $result['LambdaSP'] ?></td>
-				<td><?php echo $result['LambdaBesc'] ?></td>
+                <?php foreach($result['promejutochnie'] as $item): ?>
+                    <td><?php echo $item ?></td>
+                <?php endforeach; ?>
 			</tr>
 			</tbody>
 		</table>
@@ -76,14 +63,17 @@
 		</table>
 		<div class="result" id="kpd"></div>
 		<div class="result" id="psi"></div>
+        <div>
+            <button type="button" class="button" id="toPdf">Скачать PDF</button>
+        </div>
 </div>
 	</div>
 	</div>
     <script>
         (function ($) {
             $(document).ready(function () {
-                $('#toDoc').on('click', function () {
-                    window.location = '/compr/print/ptc/';
+                $('#toPdf').on('click', function () {
+                    window.location = '/compr/print/';
                 });
                 $('#kpd').highcharts({
                     chart: {

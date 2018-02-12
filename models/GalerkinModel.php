@@ -18,7 +18,12 @@ class GalerkinModel implements Calculate
     protected $_u;
     protected $_d2;
     protected $_plotnost;
-    protected $_koefRashoda = 0.0525;
+    protected $_koefRashoda = 0.0525; //0.03 - 0.11 (рекомендуемый диапазон 0.05 - 0.07
+    // убираем конечную температуру
+    // задаемся КПД: 0.8 - 0.85
+    // ro = Pвх / R*Tвх
+    // задаем окружную скорость
+    // убрать корень квадратный с вычисления формулы N(min-1)
     protected $_m;
 
     public function calculateCharacteristics($data)
@@ -97,22 +102,10 @@ class GalerkinModel implements Calculate
         $this->_m = $this->_koefRashoda*(M_PI/4)*pow($this->_d2, 2)*pow($this->_u,2)*$this->_plotnost;
     }
 
-    public function getPrintContent($values, $user)
+    public function getPdfContent($values, $user)
     {
         $time = date('Y-m-d H:i');
-//        $content = <<<DOC
-//        <p>Расчет для студента группы <b>{$user['group']}</b></p>
-//        <p>Логин: <b>{$user['login']}</b></p>
-//        <p>Время расчета: <b>{$time}</b></p>
-//        <p><b>Политропный КПД: </b> {$values['politrop_kpd']}</p>
-//        <p><b>Отношение давлений П: </b> {$values['otnDavl']}</p>
-//        <p><b>Политропный напор: </b> {$values['politrop_napor']}</p>
-//        <p><b>h<sub>i</sub>: </b> {$values['hi']}</p>
-//        <p><b>Диаметр D<sub>2</sub>: </b> {$values['d2']}</p>
-//        <p><b>Плотность: </b> {$values['plotnost']}</p>
-//        <p><b>Массовый расход: </b> {$values['massRashod']}</p>
-//
-//DOC;
+
         $content = <<<TXT
         Расчет для студента группы {$user['group']}\n
         Логин: {$user['login']}\n

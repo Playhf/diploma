@@ -2,5 +2,5 @@
 
 interface Calculate
 {
-    public function getPrintContent($values, $user);
+    public function getPdfContent($values, $user);
 }
