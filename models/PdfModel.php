@@ -19,13 +19,13 @@ class PdfModel extends SNMTCPDF implements Calculate
 
     protected function _getHtml($values, $user)
     {
-        ob_start();
-        ?>
-
-        <p>Расчет для студента группы <b><?php echo $user['group'] ?></b></p>
-        <p>Логин: <b><?php echo $user['login'] ?></b></p>
-        <p>Время расчета: <b><?php echo date('Y-m-d H:i') ?></b></p>
-        <h3>С исходными данными: </h3>
+        $html = '';
+        $time = date('Y-m-d H:i');
+        $html .= <<<HTM
+                  <p>Расчет для студента группы <b>{$user['group']}</b></p>
+                  <p>Логин: <b>{$user['login']}</b></p>
+                  <p>Время расчета: <b>{$time}</b></p>
+                  <h3>С исходными данными: </h3>
         <table cellspacing="0" cellpadding="1" border="1">
             <tr>
                 <th>Давление, бар</th>
@@ -37,12 +37,13 @@ class PdfModel extends SNMTCPDF implements Calculate
                 <th>Динамическая вязкость</th>
             </tr>
             <tr>
-                <?php foreach($values['ishod'] as $item): ?>
-                    <td><?php echo $item ?></td>
-                <?php endforeach; ?>
-            </tr>
-        </table>
-
+HTM;
+;
+        foreach ($values['ishod'] as $item) {
+            $html .= "<td>{$item}</td>";
+        }
+        $html .= '</tr></table>';
+        $html .= <<<HTML
         <h3>Резльтат расчета: </h3>
         <table cellspacing="0" cellpadding="1" border="1">
             <tr>
@@ -55,12 +56,12 @@ class PdfModel extends SNMTCPDF implements Calculate
                 <th>Коэффициент <b>&#955;<sub>&#8734;</sub></b></th>
             </tr>
             <tr>
-                <?php foreach($values['promejutochnie'] as $item): ?>
-                    <td><?php echo $item ?></td>
-                <?php endforeach; ?>
-            </tr>
-        </table>
-<?php
-        return ob_get_clean();
+HTML;
+        foreach ($values['promejutochnie'] as $item) {
+            $html .= "<td>{$item}</td>";
+        }
+        $html .= "</tr></table>";
+
+        return $html;
     }
 }
