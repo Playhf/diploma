@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: work
- * Date: 03.02.18
- * Time: 13:34
- */
 
 class GalerkinModel implements Calculate
 {

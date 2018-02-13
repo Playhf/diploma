@@ -3,19 +3,23 @@
 class UserController extends SiteController
 {
     public function loginAction($data = null){
-        $opt = array(
-            'title'      => 'Вход',
-            'content'    => 'login.phtml'
-        );
-        $this->indexAction($opt, $data);
+        if (!$this->isSigned()) {
+            $opt = array(
+                'title'      => 'Вход',
+                'content'    => 'login.phtml'
+            );
+            $this->indexAction($opt, $data);
+        }
     }
 
     public function registerAction($data = null){
-        $opt = array(
-            'title'     => 'Регистрация',
-            'content'   => 'register.phtml'
-        );
-        $this->indexAction($opt, $data);
+        if (!$this->isSigned()) {
+            $opt = array(
+                'title'     => 'Регистрация',
+                'content'   => 'register.phtml'
+            );
+            $this->indexAction($opt, $data);
+        }
     }
 
     public function profileAction($data = null)

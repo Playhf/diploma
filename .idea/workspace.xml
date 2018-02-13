@@ -2,262 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97034d8a-2979-4311-9f04-6aaef7d5d742" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/almohanad.ctg.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/almohanad.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavusans.ctg.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavusans.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavusansb.ctg.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavusansb.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavusansbi.ctg.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavusansbi.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavusanscondensed.ctg.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavusanscondensed.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavusanscondensedb.ctg.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavusanscondensedb.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavusanscondensedbi.ctg.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavusanscondensedbi.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavusanscondensedi.ctg.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavusanscondensedi.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavusansextralight.ctg.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavusansextralight.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavusansi.ctg.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavusansi.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavusansmono.ctg.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavusansmono.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavusansmonob.ctg.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavusansmonob.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavusansmonobi.ctg.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavusansmonobi.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavusansmonoi.ctg.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavusansmonoi.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavuserif.ctg.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavuserif.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavuserifb.ctg.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavuserifb.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavuserifbi.ctg.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavuserifbi.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavuserifcondensed.ctg.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavuserifcondensed.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavuserifcondensedb.ctg.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavuserifcondensedb.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavuserifcondensedbi.ctg.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavuserifcondensedbi.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavuserifcondensedi.ctg.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavuserifcondensedi.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavuserifi.ctg.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavuserifi.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/freemono.ctg.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/freemono.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/freemonob.ctg.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/freemonob.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/freemonobi.ctg.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/freemonobi.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/freemonoi.ctg.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/freemonoi.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/freesans.ctg.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/freesans.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/freesansb.ctg.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/freesansb.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/freesansbi.ctg.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/freesansbi.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/freesansi.ctg.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/freesansi.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/freeserif.ctg.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/freeserif.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/freeserifb.ctg.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/freeserifb.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/freeserifbi.ctg.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/freeserifbi.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/freeserifi.ctg.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/freeserifi.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/roboto.ctg.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/roboto.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/robotob.ctg.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/robotob.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/robotothin.ctg.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/robotothin.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/utils/freetype6.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/utils/pfm2afm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/utils/pfm2afm.exe" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/utils/src/pfm2afm-src.tar.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/utils/src/ttf2ufm-src.tar.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/utils/ttf2ufm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/utils/ttf2ufm.exe" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/utils/zlib1.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/zarbold.ctg.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/zarbold.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/tcpdf.fdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/tcpdf.p12" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/2dbarcodes.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/CHANGELOG.TXT" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/LICENSE.TXT" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/README.TXT" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/barcodes.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/cache/noremove.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/afr.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/ara.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/aze.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/bel.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/bra.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/cat.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/ces.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/chi.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/cym.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/dan.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/eng.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/est.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/eus.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/far.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/fra.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/ger.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/gle.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/glg.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/hat.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/heb.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/hrv.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/hun.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/hye.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/ind.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/ita.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/kat.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/kor.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/mkd.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/mlt.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/msa.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/nld.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/nob.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/pol.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/por.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/ron.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/rus.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/slv.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/spa.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/sqi.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/srp.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/swa.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/swe.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/urd.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/yid.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/lang/zho.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/config/tcpdf_config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/README.TXT" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/almohanad.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/arialunicid0.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/chinese.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/courier.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavu-fonts-ttf-2.33/AUTHORS" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavu-fonts-ttf-2.33/BUGS" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavu-fonts-ttf-2.33/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavu-fonts-ttf-2.33/NEWS" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavu-fonts-ttf-2.33/README" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavu-fonts-ttf-2.33/langcover.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavu-fonts-ttf-2.33/status.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavu-fonts-ttf-2.33/unicover.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavusans.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavusansb.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavusansbi.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavusanscondensed.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavusanscondensedb.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavusanscondensedbi.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavusanscondensedi.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavusansextralight.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavusansi.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavusansmono.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavusansmonob.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavusansmonobi.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavusansmonoi.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavuserif.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavuserifb.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavuserifbi.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavuserifcondensed.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavuserifcondensedb.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavuserifcondensedbi.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavuserifcondensedi.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/dejavuserifi.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/freefont-20100919/AUTHORS" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/freefont-20100919/COPYING" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/freefont-20100919/CREDITS" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/freefont-20100919/ChangeLog" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/freefont-20100919/INSTALL" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/freefont-20100919/README" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/freemono.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/freemonob.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/freemonobi.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/freemonoi.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/freesans.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/freesansb.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/freesansbi.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/freesansi.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/freeserif.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/freeserifb.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/freeserifbi.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/freeserifi.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/helvetica.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/helveticab.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/helveticabi.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/helveticai.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/hysmyeongjostdmedium.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/kozgopromedium.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/kozminproregular.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/msungstdlight.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/roboto.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/robotob.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/robotothin.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/stsongstdlight.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/symbol.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/times.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/timesb.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/timesbi.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/timesi.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/uni2cid_ac15.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/uni2cid_ag15.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/uni2cid_aj16.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/uni2cid_ak12.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/utils/README.TXT" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/utils/enc/cp1250.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/utils/enc/cp1251.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/utils/enc/cp1252.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/utils/enc/cp1253.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/utils/enc/cp1254.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/utils/enc/cp1255.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/utils/enc/cp1257.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/utils/enc/cp1258.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/utils/enc/cp874.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/utils/enc/iso-8859-1.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/utils/enc/iso-8859-11.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/utils/enc/iso-8859-15.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/utils/enc/iso-8859-16.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/utils/enc/iso-8859-2.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/utils/enc/iso-8859-4.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/utils/enc/iso-8859-5.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/utils/enc/iso-8859-7.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/utils/enc/iso-8859-9.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/utils/enc/koi8-r.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/utils/enc/koi8-u.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/utils/makeallotfufm.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/utils/makeallttffonts.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/utils/makefont.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/utils/src/readme.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/zapfdingbats.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/fonts/zarbold.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/htmlcolors.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/pdf417.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/qrcode.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/spotcolors.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/tcpdf.crt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/tcpdf.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tcpdf/unicode_data.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/PdfModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/work.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/work.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/ComprController.php" afterPath="$PROJECT_DIR$/controllers/ComprController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/Calculate.php" afterPath="$PROJECT_DIR$/main/Calculate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/CompressModel.php" afterPath="$PROJECT_DIR$/models/CompressModel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/UserController.php" afterPath="$PROJECT_DIR$/controllers/UserController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/SiteController.php" afterPath="$PROJECT_DIR$/main/SiteController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/GalerkinModel.php" afterPath="$PROJECT_DIR$/models/GalerkinModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/layout/calculate_ptc.phtml" afterPath="$PROJECT_DIR$/template/layout/calculate_ptc.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/layout/result_ptc.phtml" afterPath="$PROJECT_DIR$/template/layout/result_ptc.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/layout/usermain.phtml" afterPath="$PROJECT_DIR$/template/layout/usermain.phtml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -268,26 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="result_ptc.phtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template/layout/result_ptc.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="75" column="52" lean-forward="false" selection-start-line="75" selection-start-column="52" selection-end-line="75" selection-end-column="52" />
-              <folding>
-                <marker date="1518450343087" expanded="true" signature="2912:2947" ph="..." />
-                <marker date="1518450343087" expanded="true" signature="3118:3153" ph="..." />
-                <marker date="1518450343087" expanded="true" signature="5438:5473" ph="..." />
-                <marker date="1518450343087" expanded="true" signature="5644:5679" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="11" column="79" lean-forward="false" selection-start-line="11" selection-start-column="79" selection-end-line="11" selection-end-column="79" />
+              <caret line="11" column="46" lean-forward="true" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -296,8 +30,28 @@
       <file leaf-file-name="ComprController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/ComprController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="44" column="31" lean-forward="false" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="31" />
+            <state relative-caret-position="137">
+              <caret line="51" column="9" lean-forward="true" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SiteController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/SiteController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="38" column="30" lean-forward="true" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/UserController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="146">
+              <caret line="91" column="38" lean-forward="true" selection-start-line="91" selection-start-column="38" selection-end-line="91" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -306,42 +60,58 @@
       <file leaf-file-name="usermain.phtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/template/layout/usermain.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="34" lean-forward="false" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+            <state relative-caret-position="345">
+              <caret line="23" column="30" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GalerkinModel.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GalerkinModel.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/models/GalerkinModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+            <state relative-caret-position="120">
+              <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FrontController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/FrontController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="59" column="7" lean-forward="true" selection-start-line="59" selection-start-column="7" selection-end-line="59" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PdfModel.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/PdfModel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-327">
+              <caret line="9" column="42" lean-forward="false" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
               <folding>
-                <element signature="e#6#84#0#PHP" expanded="true" />
+                <marker date="1518455390033" expanded="true" signature="1065:1460" ph="..." />
+                <marker date="1518455390033" expanded="true" signature="1082:1443" ph="..." />
+                <marker date="1518455390033" expanded="true" signature="1718:2181" ph="..." />
+                <marker date="1518455390033" expanded="true" signature="1735:2164" ph="..." />
+                <marker date="1518455390033" expanded="true" signature="1875:1881" ph="..." />
+                <marker date="1518455390033" expanded="true" signature="2050:2056" ph="..." />
+                <marker date="1518455390033" expanded="true" signature="2114:2120" ph="..." />
+                <marker date="1518455390033" expanded="true" signature="2125:2132" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PdfModel.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/models/PdfModel.php">
+      <file leaf-file-name="header.phtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/layout/header.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-              <folding>
-                <marker date="1518452696774" expanded="true" signature="1026:1460" ph="..." />
-                <marker date="1518452696774" expanded="true" signature="1043:1404" ph="..." />
-                <marker date="1518452696774" expanded="true" signature="1421:1460" ph="..." />
-                <marker date="1518452696774" expanded="true" signature="1699:2201" ph="..." />
-                <marker date="1518452696774" expanded="true" signature="1716:2145" ph="..." />
-                <marker date="1518452696774" expanded="true" signature="1856:1862" ph="..." />
-                <marker date="1518452696774" expanded="true" signature="2031:2037" ph="..." />
-                <marker date="1518452696774" expanded="true" signature="2095:2101" ph="..." />
-                <marker date="1518452696774" expanded="true" signature="2106:2113" ph="..." />
-                <marker date="1518452696774" expanded="true" signature="2162:2201" ph="..." />
-              </folding>
+            <state relative-caret-position="465">
+              <caret line="31" column="21" lean-forward="false" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -349,18 +119,8 @@
       <file leaf-file-name="CompressModel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/CompressModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="148" column="5" lean-forward="false" selection-start-line="148" selection-start-column="5" selection-end-line="148" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Calculate.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/Calculate.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+            <state relative-caret-position="332">
+              <caret line="133" column="5" lean-forward="false" selection-start-line="133" selection-start-column="5" selection-end-line="133" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -377,11 +137,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>UserModel::isAdmin</find>
-      <find>isloggedin</find>
-      <find>header(&quot;loc</find>
-      <find>header(&quot;Loc</find>
-      <find>header</find>
       <find>$_SESSION[md5(session_id())]</find>
       <find>-&gt;usersess</find>
       <find>$model</find>
@@ -407,6 +162,11 @@
       <find>getRe</find>
       <find>getRashod</find>
       <find>$pdf</find>
+      <find>comprContro</find>
+      <find>-&gt;error</find>
+      <find>can</find>
+      <find>_redirectr</find>
+      <find>_rediretReferer</find>
     </findStrings>
     <replaceStrings>
       <replace>.phtml</replace>
@@ -449,7 +209,6 @@
         <option value="$PROJECT_DIR$/main/AboutController.php" />
         <option value="$PROJECT_DIR$/template/layout/admin_main.phtml" />
         <option value="$PROJECT_DIR$/controllers/AboutController.php" />
-        <option value="$PROJECT_DIR$/main/FrontController.php" />
         <option value="$PROJECT_DIR$/models/AdminModel.php" />
         <option value="$PROJECT_DIR$/controllers/AdminController.php" />
         <option value="$PROJECT_DIR$/main/DefView.php" />
@@ -460,8 +219,6 @@
         <option value="$PROJECT_DIR$/bd.sql" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/template/style/style.css" />
-        <option value="$PROJECT_DIR$/main/SiteController.php" />
-        <option value="$PROJECT_DIR$/controllers/UserController.php" />
         <option value="$PROJECT_DIR$/template/layout/profile.phtml" />
         <option value="$PROJECT_DIR$/main/DefModel.php" />
         <option value="$PROJECT_DIR$/template/layout/about.phtml" />
@@ -474,9 +231,7 @@
         <option value="$PROJECT_DIR$/template/layout/result_gal.phtml" />
         <option value="$PROJECT_DIR$/main/CalculateModel.php" />
         <option value="$PROJECT_DIR$/template/layout/calculate_galerkin.phtml" />
-        <option value="$PROJECT_DIR$/template/layout/header.phtml" />
         <option value="$PROJECT_DIR$/lib/custom/tcpdf.phtml" />
-        <option value="$PROJECT_DIR$/models/GalerkinModel.php" />
         <option value="$PROJECT_DIR$/main/Calculate.php" />
         <option value="$PROJECT_DIR$/lib/tcpdf/snmtcpdf.php" />
         <option value="$PROJECT_DIR$/lib/tcpdf/tcpdf.php" />
@@ -484,10 +239,15 @@
         <option value="$PROJECT_DIR$/template/layout/calculate_ptc.phtml" />
         <option value="$PROJECT_DIR$/template/layout/usermain.phtml" />
         <option value="$PROJECT_DIR$/models/CompressModel.php" />
-        <option value="$PROJECT_DIR$/controllers/ComprController.php" />
         <option value="$PROJECT_DIR$/main/autoload.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/models/PdfModel.php" />
+        <option value="$PROJECT_DIR$/template/layout/header.phtml" />
+        <option value="$PROJECT_DIR$/controllers/ComprController.php" />
+        <option value="$PROJECT_DIR$/main/FrontController.php" />
+        <option value="$PROJECT_DIR$/controllers/UserController.php" />
+        <option value="$PROJECT_DIR$/main/SiteController.php" />
+        <option value="$PROJECT_DIR$/models/GalerkinModel.php" />
       </list>
     </option>
   </component>
@@ -537,6 +297,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -563,23 +324,23 @@
             <path>
               <item name="public_html" type="b2602c69:ProjectViewProjectNode" />
               <item name="public_html" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="public_html" type="b2602c69:ProjectViewProjectNode" />
-              <item name="public_html" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tcpdf" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="public_html" type="b2602c69:ProjectViewProjectNode" />
-              <item name="public_html" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="main" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="public_html" type="b2602c69:ProjectViewProjectNode" />
               <item name="public_html" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="models" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="public_html" type="b2602c69:ProjectViewProjectNode" />
+              <item name="public_html" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pdflib" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="public_html" type="b2602c69:ProjectViewProjectNode" />
+              <item name="public_html" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pdflib" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tcpdf" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="public_html" type="b2602c69:ProjectViewProjectNode" />
@@ -596,7 +357,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -662,17 +422,18 @@
       <workItem from="1518177961001" duration="2567000" />
       <workItem from="1518199655488" duration="9000" />
       <workItem from="1518262605000" duration="615000" />
-      <workItem from="1518426027029" duration="21219000" />
+      <workItem from="1518426027029" duration="24218000" />
+      <workItem from="1518509850115" duration="7191000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="270960000" />
+    <option name="totallyTimeSpent" value="281150000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
+    <frame x="216" y="233" width="1303" height="780" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16175298" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16414343" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281493" sideWeight="0.5059761" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -680,7 +441,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3281493" sideWeight="0.49402392" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3281493" sideWeight="0.49402392" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39813375" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -699,15 +460,15 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281493" sideWeight="0.49402392" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16175298" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3281493" sideWeight="0.49402392" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16414343" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39813375" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39813375" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -721,17 +482,17 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/models/GalerkinModel.php</url>
-          <line>38</line>
+          <line>32</line>
           <option name="timeStamp" value="106" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/models/GalerkinModel.php</url>
-          <line>30</line>
+          <line>24</line>
           <option name="timeStamp" value="116" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/controllers/UserController.php</url>
-          <line>76</line>
+          <line>80</line>
           <option name="timeStamp" value="125" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
@@ -744,44 +505,34 @@
           <line>48</line>
           <option name="timeStamp" value="130" />
         </line-breakpoint>
-        <line-breakpoint type="php">
-          <url>file://$PROJECT_DIR$/index.php</url>
-          <line>22</line>
-          <option name="timeStamp" value="132" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/models/CompressModel.php</url>
           <line>40</line>
           <option name="timeStamp" value="148" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/models/PdfModel.php</url>
-          <line>16</line>
-          <option name="timeStamp" value="151" />
+          <url>file://$PROJECT_DIR$/pdflib/tcpdf/tcpdf.php</url>
+          <line>8376</line>
+          <option name="timeStamp" value="152" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/controllers/UserController.php</url>
+          <line>5</line>
+          <option name="timeStamp" value="160" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="152" />
+      <option name="time" value="161" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="index.php">
+        <watch expression="$_SERVER['HTTP_REFERER']" language="PHP" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/Reflection/Reflection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="1208" column="7" lean-forward="true" selection-start-line="1208" selection-start-column="7" selection-end-line="1208" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/layout/main.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_8.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
@@ -903,14 +654,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="48" column="32" lean-forward="false" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jslib/custom/errMsgs.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -950,58 +693,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/pdfcrowd/pdfcrowd.php" />
-    <entry file="file://$PROJECT_DIR$/lib/dompdf/lib/Cpdf.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2760">
-          <caret line="200" column="40" lean-forward="false" selection-start-line="200" selection-start-column="40" selection-end-line="200" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/SiteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="66" column="5" lean-forward="false" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/FrontController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/dompdf/src/Dompdf.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4155">
-          <caret line="293" column="0" lean-forward="false" selection-start-line="293" selection-start-column="0" selection-end-line="293" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/dompdf/src/CanvasFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/layout/header.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/custom/tcpdf.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/dompdf/lib/Cpdf.php" />
+    <entry file="file://$PROJECT_DIR$/lib/dompdf/src/Dompdf.php" />
+    <entry file="file://$PROJECT_DIR$/lib/dompdf/src/CanvasFactory.php" />
+    <entry file="file://$PROJECT_DIR$/lib/custom/tcpdf.php" />
     <entry file="file://$PROJECT_DIR$/template/layout/result_gal.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -1010,19 +705,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/tcpdf/config/tcpdf_config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="111" column="0" lean-forward="true" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/tcpdf/config/tcpdf_config.php" />
     <entry file="file://$PROJECT_DIR$/errors/error.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="46" column="38" lean-forward="true" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1030,37 +717,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
           <caret line="183" column="7" lean-forward="true" selection-start-line="183" selection-start-column="7" selection-end-line="183" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/Calculate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/tcpdf/tcpdf.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="3973" column="14" lean-forward="true" selection-start-line="3973" selection-start-column="14" selection-end-line="3973" selection-end-column="14" />
-          <folding>
-            <marker date="1518431633305" expanded="true" signature="684578:684584" ph=" " />
-            <marker date="1518431633305" expanded="true" signature="687013:687024" ph="..." />
-            <marker date="1518431633305" expanded="true" signature="687100:687111" ph="..." />
-            <marker date="1518431633305" expanded="true" signature="687401:687412" ph="..." />
-            <marker date="1518431633305" expanded="true" signature="687664:687670" ph=" " />
-            <marker date="1518431633305" expanded="true" signature="687800:687806" ph=" " />
-            <marker date="1518431633305" expanded="true" signature="688288:688299" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/tcpdf/tcpdf.php" />
     <entry file="file://$PROJECT_DIR$/template/layout/result_ptc.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
+        <state relative-caret-position="0">
           <caret line="75" column="52" lean-forward="false" selection-start-line="75" selection-start-column="52" selection-end-line="75" selection-end-column="52" />
           <folding>
             <marker date="1518450343087" expanded="true" signature="2912:2947" ph="..." />
@@ -1079,18 +742,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/layout/usermain.phtml">
+    <entry file="file://$PROJECT_DIR$/result_ptc.phtml" />
+    <entry file="file://$PROJECT_DIR$/pdflib/tcpdf/tcpdf.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="34" lean-forward="false" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
-          <folding />
+        <state relative-caret-position="795">
+          <caret line="151" column="6" lean-forward="false" selection-start-line="151" selection-start-column="6" selection-end-line="151" selection-end-column="6" />
+          <folding>
+            <marker date="1518431633305" expanded="true" signature="684578:684584" ph=" " />
+            <marker date="1518431633305" expanded="true" signature="687013:687024" ph="..." />
+            <marker date="1518431633305" expanded="true" signature="687100:687111" ph="..." />
+            <marker date="1518431633305" expanded="true" signature="687401:687412" ph="..." />
+            <marker date="1518431633305" expanded="true" signature="687664:687670" ph=" " />
+            <marker date="1518431633305" expanded="true" signature="687800:687806" ph=" " />
+            <marker date="1518431633305" expanded="true" signature="688288:688299" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/CompressModel.php">
+    <entry file="file://$PROJECT_DIR$/main/Calculate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="148" column="5" lean-forward="false" selection-start-line="148" selection-start-column="5" selection-end-line="148" selection-end-column="5" />
+        <state relative-caret-position="30">
+          <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -1103,12 +775,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/GalerkinModel.php">
+    <entry file="file://$PROJECT_DIR$/template/layout/usermain.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        <state relative-caret-position="345">
+          <caret line="23" column="30" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/CompressModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="133" column="5" lean-forward="false" selection-start-line="133" selection-start-column="5" selection-end-line="133" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/layout/header.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="21" lean-forward="false" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/PdfModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-327">
+          <caret line="9" column="42" lean-forward="false" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
           <folding>
-            <element signature="e#6#84#0#PHP" expanded="true" />
+            <marker date="1518455390033" expanded="true" signature="1065:1460" ph="..." />
+            <marker date="1518455390033" expanded="true" signature="1082:1443" ph="..." />
+            <marker date="1518455390033" expanded="true" signature="1718:2181" ph="..." />
+            <marker date="1518455390033" expanded="true" signature="1735:2164" ph="..." />
+            <marker date="1518455390033" expanded="true" signature="1875:1881" ph="..." />
+            <marker date="1518455390033" expanded="true" signature="2050:2056" ph="..." />
+            <marker date="1518455390033" expanded="true" signature="2114:2120" ph="..." />
+            <marker date="1518455390033" expanded="true" signature="2125:2132" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1116,35 +819,48 @@
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" column="79" lean-forward="false" selection-start-line="11" selection-start-column="79" selection-end-line="11" selection-end-column="79" />
+          <caret line="11" column="46" lean-forward="true" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/FrontController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="59" column="7" lean-forward="true" selection-start-line="59" selection-start-column="7" selection-end-line="59" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/ComprController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="44" column="31" lean-forward="false" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="31" />
+        <state relative-caret-position="137">
+          <caret line="51" column="9" lean-forward="true" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/PdfModel.php">
+    <entry file="file://$PROJECT_DIR$/controllers/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-          <folding>
-            <marker date="1518452696774" expanded="true" signature="1026:1460" ph="..." />
-            <marker date="1518452696774" expanded="true" signature="1043:1404" ph="..." />
-            <marker date="1518452696774" expanded="true" signature="1421:1460" ph="..." />
-            <marker date="1518452696774" expanded="true" signature="1699:2201" ph="..." />
-            <marker date="1518452696774" expanded="true" signature="1716:2145" ph="..." />
-            <marker date="1518452696774" expanded="true" signature="1856:1862" ph="..." />
-            <marker date="1518452696774" expanded="true" signature="2031:2037" ph="..." />
-            <marker date="1518452696774" expanded="true" signature="2095:2101" ph="..." />
-            <marker date="1518452696774" expanded="true" signature="2106:2113" ph="..." />
-            <marker date="1518452696774" expanded="true" signature="2162:2201" ph="..." />
-          </folding>
+        <state relative-caret-position="146">
+          <caret line="91" column="38" lean-forward="true" selection-start-line="91" selection-start-column="38" selection-end-line="91" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="38" column="30" lean-forward="true" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/GalerkinModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -7,10 +7,9 @@ class ComprController extends SiteController
     {
         if ($this->isLogged()) {
             $opt = array(
-                        'title'     => 'Расчет характеристик методикой TCP-10',
-                        'content'   => 'calculate_ptc.phtml'
-                    );
-
+                'title'     => 'Расчет характеристик методикой TCP-10',
+                'content'   => 'calculate_ptc.phtml'
+            );
             parent::indexAction($opt);
         }
     }
@@ -32,23 +31,25 @@ class ComprController extends SiteController
     {
         if ($this->isAccessible()) {
             $opt = array(
-                        'title'     => 'Результаты расчета методикой PTC',
-                        'content'   => 'result_ptc.phtml'
-                    );
+                'title'     => 'Результаты расчета методикой PTC',
+                'content'   => 'result_ptc.phtml'
+            );
             $this->indexAction($opt);
         }
     }
 
     public function printAction()
     {
-        $values = $this->_session['result'];
-        $this->_model = new PdfModel(SNMPDF_PAGE_ORIENTATION,
-            SNMPDF_UNIT,
-            SNMPDF_PAGE_FORMAT,
-            true,
-            'UTF-8',
-            false);
-        $this->_model->getPdfContent($values, $this->_user);
+        if ($this->isAccessible()) {
+            $values = $this->_session['result'];
+            $this->_model = new PdfModel(SNMPDF_PAGE_ORIENTATION,
+                SNMPDF_UNIT,
+                SNMPDF_PAGE_FORMAT,
+                true,
+                'UTF-8',
+                false);
+            $this->_model->getPdfContent($values, $this->_user);
+        }
     }
 
     public function exampleAction()

@@ -39,7 +39,7 @@ class SiteController
      * check is user logged in
      * @return bool
      */
-    public function isLogged(){
+    protected function isLogged(){
         if (isset($this->_user))
             return true;
         $this->_redirect("/user/login/");
@@ -49,7 +49,7 @@ class SiteController
      * check is user an admin
      * @return bool
      */
-    public function isAdmin() {
+    protected function isAdmin() {
         if ($this->isLogged()) {
             if ($this->_user['is_admin'] == 1)
                 return true;
@@ -57,13 +57,23 @@ class SiteController
         }
     }
 
-    public function isAccessible()
+    protected function isAccessible()
     {
         if ($this->isLogged()) {
             if ($this->_user['is_accessible'])
                 return true;
             $this->_redirect("/");
         }
+    }
+
+
+    protected function isSigned()
+    {
+        if ($this->_user){
+            $this->_redirect('/');
+            return true;
+        }
+        return false;
     }
 //
 //    protected function getControllerName()
