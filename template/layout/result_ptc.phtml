@@ -48,9 +48,9 @@
                     <th>Коеффициент расхода</th>
                 </tr>
 			</thead>
-			<?php for ($i = 0; $i <= count($result['KPD']) -1; $i++): ?>
+			<?php for ($i = 0, $j=0; $i <= count($result['KPD']) -1; $i++): ?>
 				<tr>
-                    <td><?php echo $i +1 ?></td>
+                    <td><?php echo ++$j ?></td>
 					<td><?php echo round($result['KPD'][$i], 3) ?></td>
 					<td><?php echo round($result['napor'][$i], 3) ?></td>
 					<td><?php echo round($result['rashod'][$i], 3) ?></td>
