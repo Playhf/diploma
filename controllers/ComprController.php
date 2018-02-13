@@ -7,7 +7,7 @@ class ComprController extends SiteController
     {
         if ($this->isLogged()) {
             $opt = array(
-                'title'     => 'Расчет характеристик методикой TCP-10',
+                'title'     => 'Расчет характеристик методикой PTC-10',
                 'content'   => 'calculate_ptc.phtml'
             );
             parent::indexAction($opt);
