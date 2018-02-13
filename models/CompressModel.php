@@ -19,9 +19,12 @@ class CompressModel
     protected $NAPOR;
     protected $RASHOD;
 
-    private $_KPD = array(0.78, 0.82, 0.81, 0.76, 0.68, 0.5);
-    private $_Napor = array(0.59, 0.58, 0.55, 0.43, 0.4, 0.27);
-    private $_Rashod = array(0.0425, 0.0525, 0.061, 0.0685, 0.07, 0.0725);
+    protected $_KPD        = array(0.78, 0.82, 0.81, 0.76, 0.68, 0.5);
+    protected $_Napor      = array(0.59, 0.58, 0.55, 0.43, 0.4, 0.27);
+    protected $_Rashod     = array(0.0425, 0.0525, 0.061, 0.0685, 0.07, 0.0725);
+
+    protected $_exIshod    = array(52, 3.2, 312, 293, 287, 350, 11.78);
+    protected $_exResIshod = array(0.91, 0.0105, 3.45, 218400, 0.0003, 0.0176, 0.0151);
 
 
     public function getOptions($data)
@@ -146,5 +149,58 @@ class CompressModel
     {
         $result = $press/($gas*$temp);
         return $result;
+    }
+
+    public function getStartTitles()
+    {
+        $html = <<<HTML
+                <th>Давление, бар</th>
+                <th>Шероховатость, мкм</th>
+                <th>Скорость (u<sub>2</sub>)</th>
+                <th>Начальная температура, К</th>
+                <th>Газовая постоянная, Дж/(кг*К)</th>
+                <th>Диаметр (D<sub>2</sub>), мм</th>
+                <th>Динамическая вязкость, м<sup>2</sup>/сек * 10<sup>-6</sup></th>
+HTML;
+        return $html;
+    }
+
+    public function getResultTitles()
+    {
+        $html = <<<HTML
+                <th>Число Маха <b>M</b></th>
+                <th><b>b<sub>2</sub></b></th>
+                <th>Кинематическая вязкость <b>&#957;</b></th>
+                <th>Число Рейнольдса <b>Re</b></th>
+                <th>Соотношение <b>K<sub>s</sub>/D<sub>h</sub></b></th>
+                <th>Коэффициент <b>&#955;<sub>sp</sub></b></th>
+                <th>Коэффициент <b>&#955;<sub>&#8734;</sub></b></th>
+HTML;
+        return $html;
+    }
+
+    public function getKpd()
+    {
+        return $this->_KPD;
+    }
+
+    public function getNapor()
+    {
+        return $this->_Napor;
+    }
+
+    public function getRashod()
+    {
+        return $this->_Rashod;
+    }
+
+    public function getExampleIshod()
+    {
+        return $this->_exIshod;
+    }
+
+    public function getExampleResultIshod()
+    {
+        return $this->_exResIshod;
     }
 }

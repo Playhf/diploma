@@ -7,7 +7,7 @@
 	<script src="/jslib/jquery-1.12.0.js"></script>
 	<script src="/jslib/jquery.validate.js"></script>
 	<script src="/jslib/custom/errMsgs.js"></script>
-	<?php if ($opt['content'] == 'result_ptc.phtml'): ?>
+    <?php if (isset($data) && is_object($data)): ?>
 		<script src="/jslib/highcharts/highcharts.js"></script>
 	<?php endif; ?>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

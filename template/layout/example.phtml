@@ -1,0 +1,166 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <?php if ($data && is_object($data)):
+            $_KPD    = $data->getKPD();
+            $_Napor  = $data->getNapor();
+            $_Rashod = $data->getRashod();
+            $_ishod  = $data->getExampleIshod();
+            $_resIshod = $data->getExampleResultIshod();
+            ?>
+            <h1 class="heading">Результат расчета характеристик компрессора для воздуха с исходными данными: </h1>
+            <table>
+                <thead>
+                <tr>
+                    <?php echo $data->getStartTitles() ?>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <?php foreach($_ishod as $item): ?>
+                        <td><?php echo $item ?></td>
+                    <?php endforeach; ?>
+                </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <thead>
+                <tr>
+                    <?php echo $data->getResultTitles() ?>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <?php foreach($_resIshod as $item): ?>
+                        <td><?php echo $item ?></td>
+                    <?php endforeach; ?>
+                </tr>
+                </tbody>
+            </table>
+
+            <h4 class="heading">Результаты безразмерных характеристик газа в 6-ти точках</h4>
+            <table class="kpd-rashod">
+                <thead>
+                <tr>
+                    <th>№</th>
+                    <th>КПД</th>
+                    <th>Коеффициент напора</th>
+                    <th>Коеффициент расхода</th>
+                </tr>
+                </thead>
+                <?php for ($i = 0; $i <= count($_KPD) -1; $i++): ?>
+                    <tr>
+                        <td><?php echo $i +1 ?></td>
+                        <td><?php echo round($_KPD[$i], 3) ?></td>
+                        <td><?php echo round($_Napor[$i], 3) ?></td>
+                        <td><?php echo round($_Rashod[$i], 3) ?></td>
+                    </tr>
+                <?php endfor; ?>
+            </table>
+            <div class="result" id="kpd"></div>
+            <div class="result" id="psi"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function ($) {
+        $(document).ready(function () {
+            $('#kpd').highcharts({
+                chart: {
+                    type: 'spline'
+                },
+                title: {
+                    text: 'Сравнительный график зависимостей КПД от коэффициента расхода'
+                },
+                subtitle: {
+                    text: 'Для воздуха'
+                },
+                xAxis: {
+                    title: {
+                        text: '<span style="font-size: 15px; font-weight: bold;">φ</span>'
+                    }
+                },
+                yAxis: {
+                    title: {
+                        text: '<span style="font-size: 15px; font-weight: bold;">η</span>'
+                    }
+                },
+                tooltip: {
+                    headerFormat: '<b>{series.name}</b><br>',
+                    pointFormat: '<span>КПД: <b>{point.y}</b>; Коэф. расхода: <b>{point.x}</b></span>'
+                },
+                plotOptions: {
+                    spline: {
+                        marker: {
+                            enabled: true
+                        }
+                    },
+                    series: {
+                        allowPointSelect: true
+                    }
+                },
+
+                series: [{
+                    name: 'Воздух',
+                    data: [
+                        <?php for ($i = 0; $i <= count($_Rashod)-1; $i++): ?>
+                        <?php echo '[', $_Rashod[$i], ',', $_KPD[$i], ']', ',' ?>
+                        <?php endfor; ?>
+                    ]
+                }]
+            });
+            $('#psi').highcharts({
+                chart: {
+                    type: 'spline'
+                },
+                title: {
+                    text: 'Сравнительный график зависимостей коэффициента напора от коэффициента расхода'
+                },
+                subtitle: {
+                    text: 'Для воздуха'
+                },
+                xAxis: {
+                    title: {
+                        text: '<span style="font-size: 15px; font-weight: bold;">φ</span>'
+                    }
+                },
+                yAxis: {
+                    title: {
+                        text: '<span style="font-size: 15px; font-weight: bold;">ψ</span>'
+                    }
+                },
+                tooltip: {
+                    useHTML: true,
+                    shared: true,
+                    headerFormat: '<b>{series.name}</b><br>',
+                    pointFormat: '<span>Коэф. напора: <b>{point.y}</b>; Коэф. расхода: <b>{point.x}</b></span>'
+                },
+                plotOptions: {
+                    spline: {
+                        marker: {
+                            enabled: true
+                        }
+                    },
+                    series: {
+                        allowPointSelect: true
+                    }
+                },
+
+                series: [{
+                    name: 'Воздух',
+                    data: [
+                        <?php for ($i = 0; $i <= count($_Rashod)-1; $i++): ?>
+                        <?php echo '[', $_Rashod[$i], ',', $_Napor[$i], ']', ',' ?>
+                        <?php endfor; ?>
+                    ]
+                }]
+            });
+        });
+    })(jQuery);
+</script>
+<?php else: ?>
+    <h2>Ошибка связи с сервером <a href="/">расчета</a></h2>
+    <p>Пожалуйста, свяжитесь с администратором</p>
+    <p>На <a href="/">главную</a></p>
+<?php endif; ?>

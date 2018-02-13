@@ -1,18 +1,17 @@
 <div class="container">
 	<div class="row">
 	<div class="col-12">
-		<?php if ($session['result']): $result = $session['result'] ?>
+		<?php if ($session['result']):
+            $result = $session['result'];
+            $_KPD    = $data->getKPD();
+            $_Napor  = $data->getNapor();
+            $_Rashod = $data->getRashod();
+		?>
 		<h1 class="heading">Результат расчета характеристик компрессора с исходными данными: </h1>
 		<table>
 			<thead>
 			<tr>
-                <th>Давление, бар</th>
-                <th>Шероховатость, мкм</th>
-                <th>Скорость (u<sub>2</sub>)</th>
-                <th>Начальная температура, К</th>
-                <th>Газовая постоянная, Дж/(кг*К)</th>
-                <th>Диаметр (D<sub>2</sub>), мм</th>
-                <th>Динамическая вязкость</th>
+                <?php echo $data->getStartTitles() ?>
             </tr>
 			</thead>
 			<tbody>
@@ -27,13 +26,7 @@
 		<table>
 			<thead>
 			<tr>
-                <th>Число Маха <b>M</b></th>
-                <th><b>b<sub>2</sub></b></th>
-                <th>Кинематическая вязкость <b>&#957;</b></th>
-                <th>Число Рейнольдса <b>Re</b></th>
-                <th>Соотношение <b>K<sub>s</sub>/D<sub>h</sub></b></th>
-                <th>Коэффициент <b>&#955;<sub>sp</sub></b></th>
-                <th>Коэффициент <b>&#955;<sub>&#8734;</sub></b></th>
+                <?php echo $data->getResultTitles() ?>
             </tr>
 			</thead>
 			<tbody>
@@ -45,16 +38,19 @@
 			</tbody>
 		</table>
 
-
+        <h4 class="heading">Результаты безразмерных характеристик газа в 6-ти точках</h4>
 		<table class="kpd-rashod">
-			<caption>Результаты безразмерных характеристик газа в 6-ти точках</caption>
 			<thead>
-				<th>КПД</th>
-				<th>Коеффициент напора</th>
-				<th>Коеффициент расхода</th>
+				<tr>
+                    <th>№</th>
+                    <th>КПД</th>
+                    <th>Коеффициент напора</th>
+                    <th>Коеффициент расхода</th>
+                </tr>
 			</thead>
 			<?php for ($i = 0; $i <= count($result['KPD']) -1; $i++): ?>
 				<tr>
+                    <td><?php echo $i +1 ?></td>
 					<td><?php echo round($result['KPD'][$i], 3) ?></td>
 					<td><?php echo round($result['napor'][$i], 3) ?></td>
 					<td><?php echo round($result['rashod'][$i], 3) ?></td>
@@ -113,22 +109,16 @@
                     series: [{
                         name: 'Воздух',
                         data: [
-                            [0.0425, 0.78],
-                            [0.0525, 0.82],
-                            [0.061, 0.81],
-                            [0.0685, 0.76],
-                            [0.07, 0.68],
-                            [0.0725, 0.5]
+                            <?php for ($i = 0; $i <= count($_Rashod)-1; $i++): ?>
+                                <?php echo '[', $_Rashod[$i], ',', $_KPD[$i], ']', ',' ?>
+                            <?php endfor; ?>
                         ]
                     }, {
                         name: 'Газ',
                         data: [
-                            [<?php echo $result['rashod'][0] ?>, <?php echo $result['KPD'][0] ?>],
-                            [<?php echo $result['rashod'][1] ?>, <?php echo $result['KPD'][1] ?>],
-                            [<?php echo $result['rashod'][2] ?>, <?php echo $result['KPD'][2] ?>],
-                            [<?php echo $result['rashod'][3] ?>, <?php echo $result['KPD'][3] ?>],
-                            [<?php echo $result['rashod'][4] ?>, <?php echo $result['KPD'][4] ?>],
-                            [<?php echo $result['rashod'][5] ?>, <?php echo $result['KPD'][5] ?>]
+                            <?php for ($i = 0; $i <= count($result['rashod'])-1; $i++): ?>
+                                <?php echo '[', $result['rashod'][$i], ',', $result['KPD'][$i], ']', ',' ?>
+                            <?php endfor; ?>
                         ]
                     }]
                 });
@@ -172,22 +162,16 @@
                     series: [{
                         name: 'Воздух',
                         data: [
-                            [0.0425, 0.59],
-                            [0.0525, 0.58],
-                            [0.061, 0.55],
-                            [0.0685, 0.43],
-                            [0.07, 0.4],
-                            [0.0725, 0.27]
+                            <?php for ($i = 0; $i <= count($_Rashod)-1; $i++): ?>
+                                <?php echo '[', $_Rashod[$i], ',', $_Napor[$i], ']', ',' ?>
+                            <?php endfor; ?>
                         ]
                     }, {
                         name: 'Газ',
                         data: [
-                            [<?php echo $result['rashod'][0] ?>, <?php echo $result['napor'][0] ?>],
-                            [<?php echo $result['rashod'][1] ?>, <?php echo $result['napor'][1] ?>],
-                            [<?php echo $result['rashod'][2] ?>, <?php echo $result['napor'][2] ?>],
-                            [<?php echo $result['rashod'][3] ?>, <?php echo $result['napor'][3] ?>],
-                            [<?php echo $result['rashod'][4] ?>, <?php echo $result['napor'][4] ?>],
-                            [<?php echo $result['rashod'][5] ?>, <?php echo $result['napor'][5] ?>]
+                            <?php for ($i = 0; $i <= count($result['rashod'])-1; $i++): ?>
+                                <?php echo '[', $result['rashod'][$i], ',', $result['napor'][$i], ']', ',' ?>
+                            <?php endfor; ?>
                         ]
                     }]
                 });

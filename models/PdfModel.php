@@ -4,6 +4,9 @@ require_once ROOT.DS.'pdflib'.DS.'tcpdf'.DS.'tcpdf.php';
 
 class PdfModel extends SNMTCPDF implements Calculate
 {
+    protected $_values;
+    protected $_user;
+
     public function getPdfContent($values, $user)
     {
         $this->SetCreator(SNMPDF_CREATOR);
@@ -19,11 +22,23 @@ class PdfModel extends SNMTCPDF implements Calculate
 
     protected function _getHtml($values, $user)
     {
+        $this->_values = $values;
+        $this->_user   = $user;
+
         $html = '';
+        $html .= $this->_getFirstTable();
+        $html .= $this->_getSecondTable();
+        $html .= $this->_getLastTable();
+
+        return $html;
+    }
+
+    protected function _getFirstTable()
+    {
         $time = date('Y-m-d H:i');
-        $html .= <<<HTM
-                  <p>Расчет для студента группы <b>{$user['group']}</b></p>
-                  <p>Логин: <b>{$user['login']}</b></p>
+        $html = <<<HTML
+                  <p>Расчет для студента группы <b>{$this->_user['group']}</b></p>
+                  <p>Логин: <b>{$this->_user['login']}</b></p>
                   <p>Время расчета: <b>{$time}</b></p>
                   <h3>С исходными данными: </h3>
         <table cellspacing="0" cellpadding="1" border="1">
@@ -37,13 +52,19 @@ class PdfModel extends SNMTCPDF implements Calculate
                 <th>Динамическая вязкость</th>
             </tr>
             <tr>
-HTM;
-;
-        foreach ($values['ishod'] as $item) {
+HTML;
+
+        foreach ($this->_values['ishod'] as $item) {
             $html .= "<td>{$item}</td>";
         }
         $html .= '</tr></table>';
-        $html .= <<<HTML
+
+        return $html;
+    }
+
+    protected function _getSecondTable()
+    {
+        $html = <<<HTML
         <h3>Резльтат расчета: </h3>
         <table cellspacing="0" cellpadding="1" border="1">
             <tr>
@@ -57,10 +78,35 @@ HTM;
             </tr>
             <tr>
 HTML;
-        foreach ($values['promejutochnie'] as $item) {
+        foreach ($this->_values['promejutochnie'] as $item) {
             $html .= "<td>{$item}</td>";
         }
         $html .= "</tr></table>";
+
+        return $html;
+    }
+
+    protected function _getLastTable()
+    {
+        $html = "<h3>КПД, Коэффициенты напора и расхода в 6-ти точках:</h3>";
+
+        $html .= '<table cellspacing="0" cellpadding="1" border="1">
+				<tr>
+				    <th>№</th>
+                    <th>КПД</th>
+                    <th>Коеффициент напора</th>
+                    <th>Коеффициент расхода</th>
+                </tr>';
+        for ($i = 0, $j = 0; $i <= count($this->_values['KPD'])-1; $i++){
+            $html .= "
+                 <tr>
+                    <td>" . ++$j .  "</td>
+                    <td>" . round($this->_values['KPD'][$i], 3)   .  "</td>
+					<td>" . round($this->_values['napor'][$i], 3) .  "</td>
+					<td>" . round($this->_values['rashod'][$i], 3).  "</td>
+                </tr>";
+        }
+        $html .= '</table>';
 
         return $html;
     }

@@ -34,13 +34,14 @@ class ComprController extends SiteController
                 'title'     => 'Результаты расчета методикой PTC',
                 'content'   => 'result_ptc.phtml'
             );
-            $this->indexAction($opt);
+            $this->_model = new CompressModel();
+            $this->indexAction($opt, $this->_model);
         }
     }
 
     public function printAction()
     {
-        if ($this->isAccessible()) {
+        if ($this->isAccessible() && $this->_session['result']) {
             $values = $this->_session['result'];
             $this->_model = new PdfModel(SNMPDF_PAGE_ORIENTATION,
                 SNMPDF_UNIT,
@@ -49,6 +50,8 @@ class ComprController extends SiteController
                 'UTF-8',
                 false);
             $this->_model->getPdfContent($values, $this->_user);
+        } else {
+            $this->_redirect('/');
         }
     }
 
@@ -58,7 +61,8 @@ class ComprController extends SiteController
             'title'   => 'Пример расчета на воздухе',
             'content' => 'example.phtml'
         );
-        $this->indexAction($opt);
+        $this->_model = new CompressModel();
+        $this->indexAction($opt, $this->_model);
     }
 
 }
