@@ -15,11 +15,11 @@ set_include_path( get_include_path()     . PATH_SEPARATOR . "controllers/"
                                                         . PATH_SEPARATOR . "pdflib/tcpdf/"
                                                         . PATH_SEPARATOR . 'jslib/');
 
-session_start();
-
 spl_autoload_register(function ($class) {
     require_once ($class . '.php');
 });
+
+session_start();
 
 $front = new FrontController();
 $front->run();
