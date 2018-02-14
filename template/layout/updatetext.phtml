@@ -4,7 +4,7 @@
 			<h1 class="heading">Редактирование профиля</h1>
 			<?php if(isset($data['errors']) && is_array($data['errors'])):
 				foreach($data['errors'] as $error): ?>
-					<p><?php echo $error ?></p>
+					<p class="text-danger text-center"><?php echo $error ?></p>
 				<?php endforeach;
 			endif; ?>
 			<form action=<?php echo "/user/update/" . $data["param"] ?> method="post">

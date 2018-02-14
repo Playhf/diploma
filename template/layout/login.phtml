@@ -4,10 +4,10 @@
 			<h1 class="heading">Пожалуйста, авторизуйтесь</h1>
 			<?php if(isset($data['errors']) && is_array($data['errors'])):
 				foreach($data['errors'] as $error): ?>
-					<p><?php echo $error ?></p>
+					<p class="text-danger text-center"><?php echo $error ?></p>
 				<?php endforeach;
 			endif; ?>
-			<form action="/user/auth" method="post" class="login-form">
+			<form action="/user/auth/" method="post" class="login-form">
 				<div class="form-group">
 					<label for="userLogin">Введите логин</label>
 					<input type="text" name="userLogin" class="form-control" id="userLogin" required>
